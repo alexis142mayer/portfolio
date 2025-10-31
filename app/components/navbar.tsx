@@ -13,9 +13,9 @@ export default function Navbar() {
       i18n.changeLanguage(currentLang === "en" ? "fr" : "en");
   }
 
-  return <div className="w-5/6 flex justify-between items-center py-2">
+  return <div className="w-5/6 flex justify-between items-center py-4">
     <h1 className="text-2xl font-semibold text-white">
-      Alexis.M()
+      Alexis.G.Mayer()
     </h1>
     <GlassSurface height={50} width={550} borderRadius={50} className="flex justify-between items-center hidden lg:flex">
       <div className="flex justify-between items-center hidden lg:flex">

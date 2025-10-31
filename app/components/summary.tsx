@@ -8,7 +8,7 @@ export default function Summary() {
     const {t} = useTranslation();
     
     return <>
-        <div className="absolute -translate-y-1/6 -z-1 h-9/10 sm:h-3/4 w-full max-w-[1525px] flex flex-col sm:flex-row justify-around items-center bg-primary dark:bg-primary-dark rounded-4xl" />
+        <div className="absolute -translate-y-1/5 -z-1 h-9/10 sm:h-3/4 w-full max-w-[1525px] flex flex-col sm:flex-row justify-around items-center bg-primary dark:bg-primary-dark rounded-4xl" />
         <div className="h-9/10 sm:h-3/4 w-full max-w-[1525px] flex flex-col sm:flex-row justify-around items-center bg-primary dark:bg-primary-dark rounded-4xl">
             <div className="w-9/10 sm:w-1/2 lg:2/3 p-2 lg:p-6 -translate-y-8">
                 <p className="pb-4 lg:pb-4">{t("summarySubtitle")}</p>
