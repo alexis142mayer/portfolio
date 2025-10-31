@@ -36,6 +36,7 @@ export default function Navbar() {
           <h2 className="text-lg font-semibold text-white underline underline-offset-1">{String(i18n.language).toLocaleUpperCase() === "FR" ? "EN" : "FR"}</h2>
         </GlassSurface>
       </a>
+      {/*
       <a href="#" className="ml-4" onClick={() => {
         setDarkMode(!darkMode);
         document.documentElement.classList.toggle("dark");
@@ -50,6 +51,7 @@ export default function Navbar() {
           </svg>
         </GlassSurface>
       </a>
+      */}
     </div>
   </div>;
 }
