@@ -6,3 +6,7 @@
   --color-primary: #EEEEEE;
   --color-primary-dark: #EEEEEE;
 }
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
