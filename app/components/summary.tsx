@@ -133,7 +133,7 @@ export default function Summary() {
                     </div>
             </ul>
             </div>
-            <Image src={selftPortrait} alt="Self Portrait" className="w-9/10 sm:w-1/3 h-1/3 sm:h-2/3 rounded-4xl sm:rounded-l-4xl object-cover sm:shadow-xl/30 -translate-y-8" />
+            <Image src={selftPortrait} alt="Self Portrait" className="w-9/10 sm:w-1/3 h-1/4 sm:h-2/3 rounded-4xl sm:rounded-l-4xl object-cover sm:shadow-xl/30 -translate-y-8" />
         </div>
     </>
 }
