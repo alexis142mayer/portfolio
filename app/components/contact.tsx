@@ -6,7 +6,6 @@ export default function Contact() {
     
     return <>
         <GlassSurface height={550} width={70} borderRadius={50} className="mr-4"/>
-        <GlassSurface height={550} width={750} borderRadius={50}>
         <div className="text-white">
             <h1 className="text-4xl font-bold">{t("getInTouch")}</h1>
             <p className="my-8 text-2xl">{t("getInTouchDescription")}</p>
@@ -21,6 +20,5 @@ export default function Contact() {
                 </a>
             </div>
         </div>
-        </GlassSurface>
     </>
 }
