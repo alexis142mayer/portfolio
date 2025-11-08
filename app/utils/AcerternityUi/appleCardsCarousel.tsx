@@ -117,7 +117,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                     duration: 0.5,
                     delay: 0.2 * index,
                     ease: "easeOut",
-                    once: true,
                   },
                 }}
                 key={"card" + index}
@@ -292,7 +291,7 @@ export const BlurImage = ({
       height={height}
       loading="lazy"
       decoding="async"
-      blurdataurl={typeof src === "string" ? src : undefined}
+      blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
       fill={rest.toString()}
       {...rest}
