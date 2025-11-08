@@ -1,8 +1,6 @@
 'use client'
 import { useState } from "react";
-import i18n from 'i18next';
 import { useTranslation } from "react-i18next";
-import GlassSurface from "../utils/ReactBits/GlassSurface";
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,45 +11,34 @@ export default function Navbar() {
       i18n.changeLanguage(currentLang === "en" ? "fr" : "en");
   }
 
-  return <div className="w-5/6 flex justify-between items-center py-4">
-    <h1 className="text-2xl font-semibold text-white">
+  return <div className="w-full absolute top-0 left-0 flex justify-between items-center p-4 z-1 dark:text-white">
+    <h1 className="text-2xl sm:text-3xl font-bold">
       Alexis.G.Mayer()
     </h1>
-    <GlassSurface height={50} width={550} borderRadius={50} className="flex justify-between items-center hidden lg:flex">
-      <div className="flex justify-between items-center hidden lg:flex">
-        <a href="#summary">
-            <h2 className="text-lg font-semibold text-white underline underline-offset-1">{t("summary")}</h2>
-        </a>
-        <a href="#experienceEducation" className="mx-9">
-            <h2 className="text-lg font-semibold text-white underline underline-offset-1">{t("experienceEducation")}</h2>
-        </a>
-        <a href="#contact">
-            <h2 className="text-lg font-semibold text-white underline underline-offset-1">{t("contact")}</h2>
-        </a>
-      </div>
-    </GlassSurface>
-    <div className="flex">
-      <a href="#" onClick={() => changeLang()}>
-        <GlassSurface height={50} width={50} borderRadius={50}>
-          <h2 className="text-lg font-semibold text-white underline underline-offset-1">{String(i18n.language).toLocaleUpperCase() === "FR" ? "EN" : "FR"}</h2>
-        </GlassSurface>
+    <div className="flex justify-between items-center">
+      <a href="#" className="mr-2" onClick={() => changeLang()}>
+          <h2 className="text-lg font-bold dark:text-white underline underline-offset-1">{String(i18n.language).toLocaleUpperCase() === "FR" ? "English" : "Français"}</h2>
       </a>
-      {/*
-      <a href="#" className="ml-4" onClick={() => {
+      <a href="#" className="ml-2" onClick={() => {
         setDarkMode(!darkMode);
         document.documentElement.classList.toggle("dark");
+        darkMode ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
+
+        //Note: Following code used to trigger on updated value in higher element with i18n. 
+        changeLang();
+        changeLang();
       }}>
-        <GlassSurface height={50} width={50} borderRadius={50}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-8 stroke-white">
-            {
-              darkMode ?
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /> :
+          {
+            darkMode ?
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-9 dark:stroke-white">
+              <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+            :
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-9 dark:stroke-white">
               <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clipRule="evenodd" />
-            }
-          </svg>
-        </GlassSurface>
+            </svg>
+          }
       </a>
-      */}
     </div>
   </div>;
 }
