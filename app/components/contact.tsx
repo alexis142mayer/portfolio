@@ -15,8 +15,8 @@ export default function Contact() {
     return <div id="contact" className="h-screen w-fit flex-col justify-center items-center bg-primary p-5 sm:p-15 dark:bg-primary-dark dark:text-white text-lg lg:text-xl">
         <h1 className="text-lg font-extrabold text-orange-700 mb-2 text-center">Contact</h1>
         <h1 className="text-3xl lg:text-4xl font-bold text-center">{t("getInTouch")}</h1>
-        <p className="my-5 text-2xl text-center">{t("getInTouchDescription")}</p>
-        <div className="h-1/3 sm:h-2/3 w-full flex items-center justify-center">
+        <p className="my-5 text-2xl text-center px-2">{t("getInTouchDescription")}</p>
+        <div className="h-1/2 sm:h-2/3 w-full flex items-center justify-center">
             <MetaBalls
                 color={darkMode ? "#FFFFFF" : "#000000"}
                 cursorBallColor={darkMode ? "#FFFFFF" : "#000000"}
