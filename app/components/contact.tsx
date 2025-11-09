@@ -1,10 +1,12 @@
+'use client'
 import { useTranslation } from "react-i18next";
 import MetaBalls from "../utils/ReactBits/MetalBalls";
 import { useState, useEffect } from "react";
 
+
 export default function Contact() {
     const {t} = useTranslation();
-    const [darkMode, setDarkMode] = useState(document.documentElement.classList.contains("dark"));
+    const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
         return setDarkMode(document.documentElement.classList.contains("dark"));

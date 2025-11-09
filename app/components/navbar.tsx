@@ -2,10 +2,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   
-  const [t, i18n] = useTranslation();
+  const {i18n} = useTranslation();
   const changeLang = () => {
       const currentLang = i18n.language;
       i18n.changeLanguage(currentLang === "en" ? "fr" : "en");

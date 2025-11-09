@@ -10,18 +10,14 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) 
-
-{
+}>) {
   return (
     <html lang="en" className="!scroll-smooth">
       <head>
           <link href="/dist/styles.css" rel="stylesheet" />
       </head>
       <body>
-        <div className="bg-primary dark:bg-primary-dark">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );

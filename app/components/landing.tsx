@@ -1,11 +1,13 @@
+'use client'
 import { useTranslation } from "react-i18next";
 import AnimatedContent from "../utils/ReactBits/AnimatedContent";
 import LiquidChrome from "../utils/ReactBits/LiquidChrome";
 import { useState, useEffect } from "react";
 
+
 export default function Landing() {
     const {t} = useTranslation();
-    const [darkMode, setDarkMode] = useState(document.documentElement.classList.contains("dark"));
+    const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
         return setDarkMode(document.documentElement.classList.contains("dark"));

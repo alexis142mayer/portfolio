@@ -1,3 +1,4 @@
+'use client'
 import AnimatedContent from "../utils/ReactBits/AnimatedContent";
 import { useTranslation } from "react-i18next";
 import selftPortrait from "../utils/images/portrait.jpg"

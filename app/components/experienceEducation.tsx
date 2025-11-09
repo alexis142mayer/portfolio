@@ -1,6 +1,8 @@
+'use client'
 import { useTranslation } from "react-i18next";
 import AnimatedContent from "../utils/ReactBits/AnimatedContent";
 import { motion } from "motion/react";
+
 
 export default function ExperienceEducation() {
     const {t} = useTranslation();

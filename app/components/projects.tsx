@@ -1,8 +1,7 @@
 "use client";
-
 import { useTranslation } from "react-i18next";
 import { Carousel, Card } from "../utils/AcerternityUi/appleCardsCarousel";
-import AnimatedContent from "../utils/ReactBits/AnimatedContent";
+
 
 export function Projects() {
   const {t} = useTranslation();
