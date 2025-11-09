@@ -30,7 +30,7 @@ export default function Contact() {
                 speed={0.2}
             />
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center font-semibold mt-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center font-semibold mt-6 pb-5">
             <div className="text-center sm:text-left">
                 <p className="border-b">{t("emailAddress")}</p>
                 <a href="mailto:alexis.g.mayer@gmail.com">alexis.g.mayer@gmail.com</a>
