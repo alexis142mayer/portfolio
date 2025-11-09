@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
           <link href="/dist/styles.css" rel="stylesheet" />
       </head>
-      <body>
+      <body className="bg-primary dark:bg-primary-dark">
         {children}
       </body>
     </html>
