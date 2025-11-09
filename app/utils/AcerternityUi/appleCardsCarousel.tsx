@@ -291,9 +291,7 @@ export const BlurImage = ({
       height={height}
       loading="lazy"
       decoding="async"
-      blurdataurl={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
-      fill={rest.toString()}
       {...rest}
     />
   );
