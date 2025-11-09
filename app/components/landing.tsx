@@ -15,7 +15,7 @@ export default function Landing() {
     
     return <div className="h-screen w-full flex flex-col justify-center items-center text-center">
         <LiquidChrome
-        baseColor={darkMode ? [0, 0, 0.1] : [0.3, 0.3, 0.35]}
+        baseColor={darkMode ? [0.1, 0.1, 0.1] : [0.3, 0.3, 0.3]}
         speed={0.2}
         amplitude={0.3}
         interactive={false}
