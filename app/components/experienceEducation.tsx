@@ -12,7 +12,7 @@ export default function ExperienceEducation() {
             initial={{width: "60vw"}}
             whileInView={{width: "90vw"}}
             viewport={{margin: "-200px", once: true}}
-            className="flex-col justify-around items-center bg-slate-200 dark:bg-zinc-700 rounded-4xl p-10 sm:p-20">
+            className="flex-col justify-around items-center bg-zinc-200 dark:bg-zinc-700 rounded-4xl p-10 sm:p-20">
             <AnimatedContent
                 distance={40}
                 direction="vertical"
