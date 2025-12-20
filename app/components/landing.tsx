@@ -19,7 +19,7 @@ export default function Landing() {
         speed={0.2}
         amplitude={0.3}
         interactive={false}
-        className="w-full h-21/20 absolute top-0 left-0"
+        className="w-full h-12/11 absolute top-0 left-0"
         />
 
         <AnimatedContent
