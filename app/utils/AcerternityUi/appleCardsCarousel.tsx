@@ -105,25 +105,12 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             )}
           >
             {items.map((item, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.3,
-                    delay: 0.2 * index,
-                    ease: "easeOut",
-                  },
-                }}
+              <div
                 key={"card" + index}
                 className="rounded-3xl last:pr-[5%] md:last:pr-[33%]"
               >
                 {item}
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -281,7 +268,7 @@ export const BlurImage = ({
   return (
     <img
       className={cn(
-        "h-full w-full transition duration-300",
+        "h-full w-full transition duration-300 object-cover",
         isLoading ? "blur-0" :
         className,
       )}

@@ -23,7 +23,7 @@ export default function Contact() {
                 cursorBallSize={2}
                 ballCount={15}
                 animationSize={30}
-                enableMouseInteraction={true}
+                enableMouseInteraction={false}
                 enableTransparency={true}
                 hoverSmoothness={0.05}
                 clumpFactor={1}

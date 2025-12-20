@@ -177,7 +177,7 @@ export function Projects() {
 
   return (
     <div className="w-full h-full bg-primary dark:bg-primary-dark py-30">
-      <div className="py-10 bg-gradient-to-t from-zinc-50 dark:from-zinc-700 to-[var(--bg-primary)]">
+      <div className="py-10 bg-gradient-to-t from-zinc-50 dark:from-zinc-500 to-[var(--bg-primary)]">
         <p className="pl-4 pb-4 text-left text-lg font-extrabold text-orange-700">{t("projects")}</p>
         <h2 className="pl-4 text-2xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans pb-4 text-left">
           {t("projectsTitle")}

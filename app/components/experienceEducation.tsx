@@ -10,9 +10,9 @@ export default function ExperienceEducation() {
     return <div id="experienceEducation" className="h-fit w-full flex justify-center items-center bg-primary dark:bg-primary-dark dark:text-white py-20">
         <motion.div
             initial={{width: "60vw"}}
-            whileInView={{width: "90vw"}}
+            whileInView={{width: "95vw"}}
             viewport={{margin: "-200px", once: true}}
-            className="flex-col justify-around items-center bg-zinc-200 dark:bg-zinc-700 rounded-4xl p-10 sm:p-20">
+            className="flex-col justify-around items-center bg-zinc-200 dark:bg-zinc-500 rounded-4xl p-8 sm:p-20">
             <AnimatedContent
                 distance={40}
                 direction="vertical"

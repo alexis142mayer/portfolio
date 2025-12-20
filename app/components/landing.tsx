@@ -37,7 +37,7 @@ export default function Landing() {
             <h1 className="mb-4 px-3 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl dark:text-white">
                 {t("welcomeMessageTitle")}
             </h1>
-            <p className="mb-8 px-3 text-lg font-normal dark:text-gray-300 lg:text-2xl sm:px-16 lg:px-48">
+            <p className="mb-8 px-3 text-lg font-semibold dark:text-gray-300 lg:text-2xl sm:px-16 lg:px-48">
                 {t("welcomeMessageSubTitle")}
             </p>
         </AnimatedContent>
@@ -75,7 +75,7 @@ export default function Landing() {
             threshold={0.1}
             delay={0.4}
             >
-                <a href="#contact" className="flex justify-center items-center py-3 px-5 ml-4 sm:ms-4 font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-orange-700">
+                <a href="#contact" className="flex justify-center items-center py-3 px-5 ml-4 sm:ms-4 font-medium text-orange-700 focus:outline-none bg-white rounded-lg border border-orange-700 hover:bg-gray-100 hover:text-orange-700">
                     {t("contactMe")}
                 </a>
             </AnimatedContent>
