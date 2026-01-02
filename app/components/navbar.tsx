@@ -18,7 +18,7 @@ export default function Navbar() {
     </h1>
     <div className="flex justify-between items-center">
       <a href="#" className="mr-2" onClick={() => changeLang()}>
-          <h2 className="text-lg font-extrabold dark:text-white underline underline-offset-1">{String(i18n.language).toLocaleUpperCase() === "FR" ? "English" : "Français"}</h2>
+          <h2 className="text-lg font-extrabold dark:text-white underline underline-offset-1">{String(i18n.language).toLocaleUpperCase() === "FR" ? "EN" : "FR"}</h2>
       </a>
       <a href="#" className="ml-2" onClick={() => {
         setDarkMode(!darkMode);
