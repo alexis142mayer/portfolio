@@ -22,7 +22,7 @@ export default function ExperienceEducation() {
                 animateOpacity
                 scale={1}
                 threshold={0}
-                delay={0}>
+                delay={0.2}>
                     <li className="mb-10 ms-6">
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -67,7 +67,7 @@ export default function ExperienceEducation() {
                 animateOpacity
                 scale={1}
                 threshold={0}
-                delay={0.4}>
+                delay={0.2}>
                     <li className="mb-10 ms-6">
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -90,7 +90,7 @@ export default function ExperienceEducation() {
                 animateOpacity
                 scale={1}
                 threshold={0}
-                delay={0.6}>
+                delay={0.2}>
                     <li className="mb-10 ms-6">
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -113,7 +113,7 @@ export default function ExperienceEducation() {
                 animateOpacity
                 scale={1}
                 threshold={0}
-                delay={0.8}>
+                delay={0.2}>
                     <li className="mb-10 ms-6">
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -135,7 +135,7 @@ export default function ExperienceEducation() {
                 animateOpacity
                 scale={1}
                 threshold={0}
-                delay={1.0}>
+                delay={0.2}>
                     <li className="mb-10 ms-6">
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -158,7 +158,7 @@ export default function ExperienceEducation() {
                 animateOpacity
                 scale={1}
                 threshold={0}
-                delay={1.2}>
+                delay={0.2}>
                     <li className="mb-10 ms-6">
                         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                             <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
