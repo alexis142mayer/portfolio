@@ -483,8 +483,8 @@ a {
  * tapering sliver of video along the top edge that reads as a hairline.
  */
 .hero-media {
-  --notch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -2 112 36'%3E%3Cpath d='M0 -2V-1A20 20 0 0 1 20 19A14 14 0 0 0 34 33H78A14 14 0 0 0 92 19A20 20 0 0 1 112 -1V-2Z'/%3E%3C/svg%3E");
-  --notch-size: 112px 36px;
+  --notch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -2 144 36'%3E%3Cpath d='M0 -2V-1A20 20 0 0 1 20 19A14 14 0 0 0 34 33H110A14 14 0 0 0 124 19A20 20 0 0 1 144 -1V-2Z'/%3E%3C/svg%3E");
+  --notch-size: 144px 36px;
 
   position: relative;
   flex: 1;
@@ -502,11 +502,11 @@ a {
     linear-gradient(#000 0 0);
 }
 
-/* A wider notch on larger screens: 120px across the bottom instead of 72px. */
+/* A wider notch on larger screens: 180px across the bottom instead of 104px. */
 @media (min-width: 801px) {
   .hero-media {
-    --notch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -2 160 36'%3E%3Cpath d='M0 -2V-1A20 20 0 0 1 20 19A14 14 0 0 0 34 33H126A14 14 0 0 0 140 19A20 20 0 0 1 160 -1V-2Z'/%3E%3C/svg%3E");
-    --notch-size: 160px 36px;
+    --notch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -2 220 36'%3E%3Cpath d='M0 -2V-1A20 20 0 0 1 20 19A14 14 0 0 0 34 33H186A14 14 0 0 0 200 19A20 20 0 0 1 220 -1V-2Z'/%3E%3C/svg%3E");
+    --notch-size: 220px 36px;
   }
 }
 
