@@ -2,50 +2,36 @@
 
 Live at **[alexisgmayer.dev](https://alexisgmayer.dev)**
 
-A bilingual (English / French) single-page portfolio that presents my background, projects, experience and education, with a downloadable resume. It has light and dark themes and WebGL / scroll-driven animations.
+A bilingual (English / French) single-page portfolio that presents my background, projects, experience and education, with a downloadable resume.
 
 ## Tech Stack
 
 | Area | Technology |
 | --- | --- |
-| Framework | [Next.js 16](https://nextjs.org) (App Router, Turbopack) |
+| Build tool | [Vite 6](https://vite.dev) |
 | UI | [React 19](https://react.dev) |
-| Language | [TypeScript 5](https://www.typescriptlang.org) |
-| Styling | [Tailwind CSS 4](https://tailwindcss.com) via `@tailwindcss/postcss`, plus [clsx](https://github.com/lukeed/clsx) and [tailwind-merge](https://github.com/dcastil/tailwind-merge) |
-| Animation | [Motion](https://motion.dev) (`motion/react`), [GSAP](https://gsap.com) with ScrollTrigger |
-| WebGL | [OGL](https://github.com/oframe/ogl) for the Liquid Chrome and Metal Balls backgrounds |
-| Internationalization | [i18next](https://www.i18next.com) + [react-i18next](https://react.i18next.com) |
-| Linting | [ESLint 9](https://eslint.org) with `eslint-config-next` |
+| Styling | Plain CSS (`src/index.css`) |
+| Linting | [ESLint 9](https://eslint.org) |
 
 ## Features
 
-- **Bilingual content**: the navbar toggles between English and French. All copy lives in `app/utils/i18n/locales/en.json` and `fr.json`.
-- **Dark mode**: a class-based Tailwind `dark` variant, managed by `app/utils/useDarkMode.ts`. A small inline script in `app/layout.tsx` applies the saved theme before first paint so the page doesn't flash light mode.
-- **Animated sections**: content reveals on scroll, a project carousel and a glass-surface effect.
+- **Bilingual content**: a header toggle switches between English and French. The language comes from a `?lang=` link, then the visitor's last choice, then the browser's language. All copy lives in `src/content.js`.
+- **Scroll reveals and parallax**: sections fade in with `IntersectionObserver`, and motion is turned off for visitors who prefer reduced motion.
+- **Video backdrop**: a looping cloud video with a poster image fallback.
 - **Resume download**: served from `public/ResumeAlexisMayer.pdf`.
 
 ## Project Structure
 
 ```
-app/
-├── layout.tsx              # Root layout, metadata, theme bootstrap
-├── page.tsx                # Single page composing all sections
-├── globals.css             # Tailwind import, theme tokens, dark variant
-├── components/             # Page sections
-│   ├── navbar.tsx          # Navigation, language and theme toggles
-│   ├── landing.tsx
-│   ├── summary.tsx
-│   ├── projects.tsx
-│   ├── experienceEducation.tsx
-│   └── contact.tsx
-└── utils/
-    ├── i18n/               # i18next setup and en/fr locale files
-    ├── AcerternityUi/      # Apple Cards Carousel (Aceternity UI)
-    ├── ReactBits/          # AnimatedContent, GlassSurface, LiquidChrome, MetalBalls
-    ├── images/             # Portrait image
-    └── useDarkMode.ts
-public/                     # Static assets (resume PDF)
-portfolio/                  # Separate React + Vite app (independent of the Next.js site)
+index.html            # Entry HTML, metadata, font loading
+src/
+├── main.jsx          # React root
+├── App.jsx           # All page sections and hooks
+├── content.js        # English and French copy, profile details
+└── index.css         # Styles and theme tokens
+public/
+├── ResumeAlexisMayer.pdf
+└── assets/           # Images, video and credits.json (media licenses)
 ```
 
 ## Getting Started
@@ -54,7 +40,7 @@ Requires Node.js 20 or later.
 
 ```bash
 npm install
-npm run dev       # start the dev server at http://localhost:3000
+npm run dev       # start the dev server at http://localhost:5173
 ```
 
 ### Scripts
@@ -62,8 +48,8 @@ npm run dev       # start the dev server at http://localhost:3000
 | Command | Description |
 | --- | --- |
 | `npm run dev` | Start the development server |
-| `npm run build` | Create a production build |
-| `npm run start` | Serve the production build |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Serve the production build at http://localhost:4173 |
 | `npm run lint` | Run ESLint |
 
 ## Deployment
@@ -72,13 +58,12 @@ The site is hosted on [Vercel](https://vercel.com) at [alexisgmayer.dev](https:/
 
 - Every push to `main` deploys to production.
 - Pushes to any other branch create a preview deployment with its own URL.
-- Vercel detects the Next.js build settings on its own, so the project needs no `vercel.json` or environment variables.
-- `metadataBase` in `app/layout.tsx` is set to the production domain, so metadata URLs resolve to it.
+- `vercel.json` sets the framework to Vite and the output directory to `dist`.
 
-## Resources Utilized
+## Media Credits
 
-- [Flowbite](https://flowbite.com/): Tailwind component examples
-- [Heroicons](https://heroicons.com/): SVG icons
-- [Tailwind CSS documentation](https://tailwindcss.com/)
-- [Aceternity UI: Apple Cards Carousel](https://ui.aceternity.com/components/apple-cards-carousel)
-- [React Bits](https://www.reactbits.dev/): component variations (Animated Content, Glass Surface, Liquid Chrome, Metal Balls)
+Third-party images and video are listed with their licenses in `public/assets/credits.json`.
+
+## Previous Version
+
+The earlier Next.js version of this site is in the git history, up to commit `a55ff16`.
