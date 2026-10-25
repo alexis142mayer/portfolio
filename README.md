@@ -1,5 +1,7 @@
 # Alexis G. Mayer — Portfolio
 
+Live at **[alexisgmayer.dev](https://alexisgmayer.dev)**
+
 A bilingual (English / French) single-page portfolio that presents my background, projects, experience and education, with a downloadable resume. It has light and dark themes and WebGL / scroll-driven animations.
 
 ## Tech Stack
@@ -63,6 +65,15 @@ npm run dev       # start the dev server at http://localhost:3000
 | `npm run build` | Create a production build |
 | `npm run start` | Serve the production build |
 | `npm run lint` | Run ESLint |
+
+## Deployment
+
+The site is hosted on [Vercel](https://vercel.com) at [alexisgmayer.dev](https://alexisgmayer.dev).
+
+- Every push to `main` deploys to production.
+- Pushes to any other branch create a preview deployment with its own URL.
+- Vercel detects the Next.js build settings on its own, so the project needs no `vercel.json` or environment variables.
+- `metadataBase` in `app/layout.tsx` is set to the production domain, so metadata URLs resolve to it.
 
 ## Resources Utilized
 
