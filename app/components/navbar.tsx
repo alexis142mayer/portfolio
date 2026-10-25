@@ -1,11 +1,11 @@
 'use client'
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import GlassSurface from "../utils/ReactBits/GlassSurfaceProps";
+import { useDarkMode } from "../utils/useDarkMode";
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
-  
+  const { darkMode, toggle } = useDarkMode();
+
   const {i18n} = useTranslation();
   const changeLang = () => {
       const currentLang = i18n.language;
@@ -25,15 +25,7 @@ export default function Navbar() {
         <a href="#" className="mr-2" onClick={() => changeLang()}>
             <h2 className="text-lg font-extrabold dark:text-white underline underline-offset-1">{String(i18n.language).toLocaleUpperCase() === "FR" ? "EN" : "FR"}</h2>
         </a>
-        <a href="#" className="ml-2" onClick={() => {
-          setDarkMode(!darkMode);
-          document.documentElement.classList.toggle("dark");
-          darkMode ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
-
-          //Note: Following code used to trigger on updated value in higher element with i18n. 
-          changeLang();
-          changeLang();
-        }}>
+        <a href="#" className="ml-2" onClick={toggle}>
             {
               darkMode ?
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-9 dark:stroke-white">

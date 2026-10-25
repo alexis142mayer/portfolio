@@ -1,16 +1,12 @@
 'use client'
 import { useTranslation } from "react-i18next";
 import MetaBalls from "../utils/ReactBits/MetalBalls";
-import { useState, useEffect } from "react";
+import { useDarkMode } from "../utils/useDarkMode";
 
 
 export default function Contact() {
     const {t} = useTranslation();
-    const [darkMode, setDarkMode] = useState(false);
-
-    useEffect(() => {
-        return setDarkMode(document.documentElement.classList.contains("dark"));
-    });
+    const { darkMode } = useDarkMode();
     
     return <div id="contact" className="h-screen w-fit flex-col justify-center items-center bg-primary p-5 sm:p-15 dark:bg-primary-dark dark:text-white text-lg lg:text-xl">
         <h1 className="text-lg font-extrabold text-orange-700 mb-2 text-center">Contact</h1>

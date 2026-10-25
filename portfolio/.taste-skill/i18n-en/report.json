@@ -1,0 +1,2054 @@
+{
+ "url": "http://localhost:4173",
+ "at": "2026-10-25T14:46:27.128Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    1,
+    1,
+    0.93,
+    0.97,
+    1,
+    0.93
+   ],
+   "motion": {
+    "elements": 56,
+    "css": 16,
+    "transitions": 40,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4610,
+     "screens": 5.1,
+     "words": 416,
+     "img": 13,
+     "video": 1,
+     "canvas": 0,
+     "svg": 4,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 10,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "project-a-quantum.jpg",
+      "photo-1602081957921-9137a5d6eaee?auto=format&fit",
+      "photo-1599202860130-f600f4948364?auto=format&fit",
+      "photo-1511984804822-e16ba72f5848?auto=format&fit",
+      "hero-842.jpg",
+      "hero-93.jpg",
+      "hero-994.jpg",
+      "photo-1599202860130-f600f4948364?auto=format&fit"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+     "words": 7,
+     "chars": 38,
+     "lines": 2,
+     "size": 68,
+     "vw": 4.7,
+     "font": "Archivo",
+     "weight": 500,
+     "tracking": -0.01,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.68,
+     "top": 150,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+     "words": 7,
+     "lines": 2,
+     "size": 68,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+      "words": 7,
+      "chars": 38,
+      "lines": 2,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.68,
+      "top": 150,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Project A",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1070,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Project B",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1149,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Project C",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1228,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Project D",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1306,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "A",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Archivo",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 1642,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "A L E X I S",
+      "words": 6,
+      "chars": 11,
+      "lines": 1,
+      "size": 224,
+      "vw": 15.6,
+      "font": "Archivo",
+      "weight": 300,
+      "tracking": 0.2,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1957,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "EXPERIENCE AND EDUCATION",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 2853,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "LET’S TALK",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 4407,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      15,
+      17,
+      22,
+      26,
+      40,
+      68,
+      224
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.2
+     },
+     "measureChars": 76,
+     "max": {
+      "size": 224,
+      "vw": 15.6,
+      "font": "Archivo",
+      "text": "A"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 4,
+     "microLabelShare": 0.017,
+     "microSamples": [
+      "Artificial intelligence",
+      "Roles",
+      "Education",
+      "Strengths"
+     ],
+     "upperShare": 0.08,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#d8d3ce",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.11,
+      "l": 0.83
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 84,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#8fa3bd",
+       "top": 323,
+       "hsl": {
+        "h": 214,
+        "s": 0.26,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#1b1d20",
+       "top": 900,
+       "hsl": {
+        "h": 216,
+        "s": 0.08,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#f2f2ef",
+       "share": 0.34
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.32
+      },
+      {
+       "color": "#16171a",
+       "share": 0.21
+      },
+      {
+       "color": "#5d6168",
+       "share": 0.11
+      },
+      {
+       "color": "#1b2b23",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#cfe0d6",
+      "hsl": {
+       "h": 145,
+       "s": 0.22,
+       "l": 0.85
+      },
+      "fg": "#1b2b23"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 3,
+     "heroLabels": [
+      "EN FR",
+      "EMAIL ME",
+      "SEE THE WORK"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 4,
+     "scrims": 0,
+     "gradientSamples": [
+      "span.glow.glow-blue → radial-gradient(closest-side, rgb(143, 163, 189), rgba(0, 0, 0, 0))",
+      "span.glow.glow-coral → radial-gradient(closest-side, rgb(217, 119, 106), rgba(0, 0, 0, 0))",
+      "span.glow.glow-crimson → radial-gradient(closest-side, rgba(163, 35, 63, 0.75), rgba(0, 0, 0, 0))",
+      "div.work-field → linear-gradient(115deg, rgb(143, 163, 189) 0%, rgb(217, 119, 106) 58%, rgb(163, 35, 63) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 14,
+     "hairlineSamples": [
+      "li.list-row.rise 633px",
+      "li.list-row.rise 633px",
+      "li.list-row.rise 633px",
+      "li.list-row.rise 633px",
+      "li.list-row.rise 633px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 6,
+     "boxRadius": 28,
+     "squareMedia": 0,
+     "roundedMedia": 9,
+     "mediaRadius": 28,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "ratio": 0.67
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4610,
+    "margins": {
+     "left": 63,
+     "right": 63
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero.panel",
+      "tag": "section",
+      "top": 84,
+      "height": 796,
+      "words": 31,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Alexis G. Mayer,",
+       "size": 68,
+       "tag": "h1"
+      },
+      "left": 63,
+      "right": 63,
+      "textLeft": 63,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.work.panel",
+      "tag": "section",
+      "top": 900,
+      "height": 917,
+      "words": 132,
+      "media": 1,
+      "middle": 107,
+      "heading": {
+       "text": "Project A",
+       "size": 68,
+       "tag": "span"
+      },
+      "left": 63,
+      "right": 20,
+      "textLeft": 63,
+      "textRight": 90,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about.panel",
+      "tag": "section",
+      "top": 1837,
+      "height": 900,
+      "words": 118,
+      "media": 1,
+      "middle": 38,
+      "heading": {
+       "text": "About Alexis Mayer",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 63,
+      "right": 83,
+      "textLeft": 237,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.experience.panel",
+      "tag": "section",
+      "top": 2757,
+      "height": 837,
+      "words": 99,
+      "media": 0,
+      "middle": 76,
+      "heading": {
+       "text": "Experience and education",
+       "size": 68,
+       "tag": "h2"
+      },
+      "left": 63,
+      "right": 63,
+      "textLeft": 63,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact.panel",
+      "tag": "section",
+      "top": 3614,
+      "height": 900,
+      "words": 42,
+      "media": 0,
+      "middle": 389,
+      "heading": {
+       "text": "alexis.g.mayer@gmail.com",
+       "size": 26,
+       "tag": "a"
+      },
+      "left": 63,
+      "right": 91,
+      "textLeft": 63,
+      "textRight": 91,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+      "size": 68,
+      "top": 150,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 63,
+      "n": 6
+     },
+     {
+      "x": 1066,
+      "n": 3
+     },
+     {
+      "x": 732,
+      "n": 2
+     },
+     {
+      "x": 871,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 840,
+     "w": 1440,
+     "h": 60
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    1,
+    0.93,
+    0.91,
+    0.9,
+    0.8,
+    1,
+    0.88,
+    0.99
+   ],
+   "motion": {
+    "elements": 59,
+    "css": 14,
+    "transitions": 45,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7991,
+     "screens": 7.8,
+     "words": 610,
+     "img": 13,
+     "video": 1,
+     "canvas": 0,
+     "svg": 4,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 10,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "project-a-quantum.jpg",
+      "photo-1602081957921-9137a5d6eaee?auto=format&fit",
+      "photo-1599202860130-f600f4948364?auto=format&fit",
+      "photo-1511984804822-e16ba72f5848?auto=format&fit",
+      "hero-842.jpg",
+      "hero-93.jpg",
+      "hero-994.jpg",
+      "photo-1599202860130-f600f4948364?auto=format&fit"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+     "words": 7,
+     "chars": 38,
+     "lines": 2,
+     "size": 46.1,
+     "vw": 6,
+     "font": "Archivo",
+     "weight": 500,
+     "tracking": -0.01,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.91,
+     "top": 99,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+     "words": 7,
+     "lines": 2,
+     "size": 46.1,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+      "words": 7,
+      "chars": 38,
+      "lines": 2,
+      "size": 46.1,
+      "vw": 6,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 99,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Project A",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1598,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "Project B",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 2591,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "Project C",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 3519,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "Project D",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 4473,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "A L E X I S",
+      "words": 6,
+      "chars": 11,
+      "lines": 1,
+      "size": 123.2,
+      "vw": 16,
+      "font": "Archivo",
+      "weight": 300,
+      "tracking": 0.2,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5091,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "EXPERIENCE AND EDUCATION",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 6069,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "LET’S TALK",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 7209,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      17,
+      22,
+      46,
+      48,
+      85,
+      123
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16.5,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.2
+     },
+     "measureChars": 76,
+     "max": {
+      "size": 123.2,
+      "vw": 16,
+      "font": "Archivo",
+      "text": "A"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 3,
+     "microLabelShare": 0.006,
+     "microSamples": [
+      "Roles",
+      "Education",
+      "Strengths"
+     ],
+     "upperShare": 0.07,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "GC Notify",
+      "above": "A L E X I S",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 16.5,
+      "top": 4946
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#d8d3ce",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.11,
+      "l": 0.83
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 75,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#8fa3bd",
+       "top": 408,
+       "hsl": {
+        "h": 214,
+        "s": 0.26,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#1b1d20",
+       "top": 5022,
+       "hsl": {
+        "h": 216,
+        "s": 0.08,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.54
+      },
+      {
+       "color": "#f2f2ef",
+       "share": 0.23
+      },
+      {
+       "color": "#16171a",
+       "share": 0.14
+      },
+      {
+       "color": "#5d6168",
+       "share": 0.07
+      },
+      {
+       "color": "#1b2b23",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#cfe0d6",
+      "hsl": {
+       "h": 145,
+       "s": 0.22,
+       "l": 0.85
+      },
+      "fg": "#1b2b23"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 3,
+     "heroLabels": [
+      "EN FR",
+      "EMAIL ME",
+      "SEE THE WORK"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 4,
+     "scrims": 0,
+     "gradientSamples": [
+      "span.glow.glow-blue → radial-gradient(closest-side, rgb(143, 163, 189), rgba(0, 0, 0, 0))",
+      "span.glow.glow-coral → radial-gradient(closest-side, rgb(217, 119, 106), rgba(0, 0, 0, 0))",
+      "span.glow.glow-crimson → radial-gradient(closest-side, rgba(163, 35, 63, 0.75), rgba(0, 0, 0, 0))",
+      "div.work-field → linear-gradient(115deg, rgb(143, 163, 189) 0%, rgb(217, 119, 106) 58%, rgb(163, 35, 63) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 14,
+     "hairlineSamples": [
+      "li.list-row.rise 700px",
+      "li.list-row.rise 700px",
+      "li.list-row.rise 700px",
+      "li.list-row.rise 700px",
+      "li.list-row.rise 700px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 6,
+     "boxRadius": 28,
+     "squareMedia": 0,
+     "roundedMedia": 10,
+     "mediaRadius": 28,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "ratio": 0.66
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 7991,
+    "margins": {
+     "left": 34,
+     "right": 34
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero.panel",
+      "tag": "section",
+      "top": 75,
+      "height": 938,
+      "words": 31,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Alexis G. Mayer,",
+       "size": 46,
+       "tag": "h1"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 34,
+      "textRight": 149,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.work.panel",
+      "tag": "section",
+      "top": 1024,
+      "height": 3987,
+      "words": 339,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Project A",
+       "size": 84,
+       "tag": "span"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 34,
+      "textRight": 110,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about.panel",
+      "tag": "section",
+      "top": 5022,
+      "height": 980,
+      "words": 118,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "About Alexis Mayer",
+       "size": 22,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 35,
+      "textLeft": 34,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.experience.panel",
+      "tag": "section",
+      "top": 6013,
+      "height": 992,
+      "words": 99,
+      "media": 0,
+      "middle": 67,
+      "heading": {
+       "text": "Experience and education",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 34,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact.panel",
+      "tag": "section",
+      "top": 7015,
+      "height": 900,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 56,
+      "textLeft": 34,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+      "size": 46,
+      "top": 99,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 9
+     },
+     {
+      "x": 400,
+      "n": 2
+     },
+     {
+      "x": 56,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.92,
+    0.74,
+    0.82,
+    0.78,
+    0.75,
+    0.83,
+    0.92,
+    0.83,
+    0.92,
+    0.92
+   ],
+   "motion": {
+    "elements": 55,
+    "css": 14,
+    "transitions": 41,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7670,
+     "screens": 9.1,
+     "words": 606,
+     "img": 13,
+     "video": 1,
+     "canvas": 0,
+     "svg": 4,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 10,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "project-a-quantum.jpg",
+      "photo-1602081957921-9137a5d6eaee?auto=format&fit",
+      "photo-1599202860130-f600f4948364?auto=format&fit",
+      "photo-1511984804822-e16ba72f5848?auto=format&fit",
+      "hero-842.jpg",
+      "hero-93.jpg",
+      "hero-994.jpg",
+      "photo-1599202860130-f600f4948364?auto=format&fit"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+     "words": 7,
+     "chars": 38,
+     "lines": 2,
+     "size": 24,
+     "vw": 6.2,
+     "font": "Archivo",
+     "weight": 500,
+     "tracking": -0.01,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 98,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+     "words": 7,
+     "lines": 2,
+     "size": 24,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "AM",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Archivo",
+      "weight": 600,
+      "tracking": 0.06,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 25,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+      "words": 7,
+      "chars": 38,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 98,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Project A",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1216,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "Project B",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 2146,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "Project C",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 2936,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "Project D",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Archivo",
+      "weight": 400,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 3752,
+      "tag": "button",
+      "kind": "statement"
+     },
+     {
+      "text": "A L E X I S",
+      "words": 6,
+      "chars": 11,
+      "lines": 1,
+      "size": 66.3,
+      "vw": 17,
+      "font": "Archivo",
+      "weight": 300,
+      "tracking": 0.12,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 4427,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "EXPERIENCE AND EDUCATION",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 35.1,
+      "vw": 9,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 5615,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "LET’S TALK",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 35.1,
+      "vw": 9,
+      "font": "Archivo",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 6877,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      16,
+      17,
+      20,
+      22,
+      24,
+      35,
+      43,
+      66
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.2
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 66.3,
+      "vw": 17,
+      "font": "Archivo",
+      "text": "A"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 3,
+     "microLabelShare": 0.006,
+     "microSamples": [
+      "Roles",
+      "Education",
+      "Strengths"
+     ],
+     "upperShare": 0.07,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#d8d3ce",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.11,
+      "l": 0.83
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 74,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#8fa3bd",
+       "top": 378,
+       "hsl": {
+        "h": 214,
+        "s": 0.26,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#1b1d20",
+       "top": 4363,
+       "hsl": {
+        "h": 216,
+        "s": 0.08,
+        "l": 0.12
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.54
+      },
+      {
+       "color": "#f2f2ef",
+       "share": 0.23
+      },
+      {
+       "color": "#16171a",
+       "share": 0.14
+      },
+      {
+       "color": "#5d6168",
+       "share": 0.07
+      },
+      {
+       "color": "#1b2b23",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#cfe0d6",
+      "hsl": {
+       "h": 145,
+       "s": 0.22,
+       "l": 0.85
+      },
+      "fg": "#1b2b23"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 3,
+     "heroLabels": [
+      "EN FR",
+      "EMAIL ME",
+      "SEE THE WORK"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 4,
+     "scrims": 0,
+     "gradientSamples": [
+      "span.glow.glow-blue → radial-gradient(closest-side, rgb(143, 163, 189), rgba(0, 0, 0, 0))",
+      "span.glow.glow-coral → radial-gradient(closest-side, rgb(217, 119, 106), rgba(0, 0, 0, 0))",
+      "span.glow.glow-crimson → radial-gradient(closest-side, rgba(163, 35, 63, 0.75), rgba(0, 0, 0, 0))",
+      "div.work-field → linear-gradient(115deg, rgb(143, 163, 189) 0%, rgb(217, 119, 106) 58%, rgb(163, 35, 63) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 14,
+     "hairlineSamples": [
+      "li.list-row.rise 330px",
+      "li.list-row.rise 330px",
+      "li.list-row.rise 330px",
+      "li.list-row.rise 330px",
+      "li.list-row.rise 330px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 6,
+     "boxRadius": 28,
+     "squareMedia": 0,
+     "roundedMedia": 10,
+     "mediaRadius": 28,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "ratio": 0.6
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7670,
+    "margins": {
+     "left": 30,
+     "right": 30
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero.panel",
+      "tag": "section",
+      "top": 74,
+      "height": 796,
+      "words": 31,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Alexis G. Mayer,",
+       "size": 24,
+       "tag": "h1"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
+      "textRight": 55,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.work.panel",
+      "tag": "section",
+      "top": 880,
+      "height": 3473,
+      "words": 339,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Project A",
+       "size": 43,
+       "tag": "span"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about.panel",
+      "tag": "section",
+      "top": 4363,
+      "height": 1186,
+      "words": 118,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "About Alexis Mayer",
+       "size": 20,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.experience.panel",
+      "tag": "section",
+      "top": 5559,
+      "height": 1184,
+      "words": 99,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience and education",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact.panel",
+      "tag": "section",
+      "top": 6753,
+      "height": 844,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 52,
+      "textLeft": 30,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "ALEXIS G. MAYER, DEVELOPER & TEAM LEAD",
+      "size": 24,
+      "top": 98,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 30,
+      "n": 11
+     },
+     {
+      "x": 52,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "4 tiny uppercase letter-spaced labels (e.g. \"Artificial intelligence\", \"Roles\", \"Education\", \"Strengths\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "4 gradient fill(s): span.glow.glow-blue → radial-gradient(closest-side, rgb(143, 163, 189), rgba(0, 0, 0, 0)) | span.glow.glow-coral → radial-gradient(closest-side, rgb(217, 119, 106), rgba(0, 0, 0, 0)) | span.glow.glow-crimson → radial-gradient(closest-side, rgba(163, 35, 63, 0.75), rgba(0, 0, 0, 0))",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "14 thin rule(s)/divider line(s): li.list-row.rise 633px | li.list-row.rise 633px | li.list-row.rise 633px | li.list-row.rise 633px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "2 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.2:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt EB Garamond and EB Garamond, but the page renders Inter, Archivo.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 768,
+   "message": "1 eyebrow/kicker label(s) above headings: \"GC Notify\" (pill) above \"A L E X I S\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 390,
+   "message": "11 different font sizes (12, 13, 14, 16, 17, 20, 22, 24, 35, 43, 66).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "WARN",
+   "id": "small-title",
+   "width": 390,
+   "message": "The h1 is 24px (\"ALEXIS G. MAYER, DEVELOPER & TEAM LEAD\").",
+   "fix": "Set the title at display size, or make the large text of the first screen the h1."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\desktop-page-01.jpg",
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\tablet-page-01.jpg",
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\mobile-page-01.jpg",
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\i18n-en\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,2121 @@
+{
+ "url": "http://localhost:4173",
+ "at": "2026-10-25T14:05:04.803Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.81,
+    0.37,
+    0.57,
+    0.5,
+    0.63,
+    0.63
+   ],
+   "motion": {
+    "elements": 95,
+    "css": 62,
+    "transitions": 33,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5095,
+     "screens": 5.7,
+     "words": 375,
+     "img": 11,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-842.jpg",
+      "hero-93.jpg",
+      "hero-994.jpg",
+      "lumen-desk.jpg",
+      "northwind-elevation.jpg",
+      "pulse-woven.jpg",
+      "fieldnotes-sketch.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Alexis Mayer, designer who codes",
+     "words": 5,
+     "chars": 32,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "EB Garamond",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.1,
+     "upper": false,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "left",
+     "widthRatio": 0.26,
+     "top": 282,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Alexis Mayer, designer who codes",
+     "words": 5,
+     "lines": 2,
+     "size": 56,
+     "font": "EB Garamond"
+    },
+    "headings": [
+     {
+      "text": "Alexis Mayer, designer who codes",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 282,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected work",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1100,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lumen",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 1195,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Northwind Studio",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 1295,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Pulse",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 1395,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Fieldnotes",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 1495,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "A short letter",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 2356,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Alexis Mayer",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.36,
+      "top": 2842,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Experience and practice",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 3261,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start a project",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.25,
+      "top": 3921,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 1,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "EB Garamond",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      16,
+      21,
+      32,
+      56,
+      80
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "EB Garamond",
+      "size": 21,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.3
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 80,
+      "vw": 5.6,
+      "font": "EB Garamond",
+      "text": "Lumen"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.1,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f6f5f3",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 64,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#ffd3e2",
+       "top": 64,
+       "hsl": {
+        "h": 340,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f6f5f3",
+       "top": 900,
+       "hsl": {
+        "h": 40,
+        "s": 0.14,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#fff0b8",
+       "top": 1185,
+       "hsl": {
+        "h": 47,
+        "s": 1,
+        "l": 0.86
+       }
+      },
+      {
+       "color": "#cfe5ff",
+       "top": 1185,
+       "hsl": {
+        "h": 213,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#c8f0de",
+       "top": 1185,
+       "hsl": {
+        "h": 153,
+        "s": 0.57,
+        "l": 0.86
+       }
+      },
+      {
+       "color": "#ffd8c9",
+       "top": 1185,
+       "hsl": {
+        "h": 17,
+        "s": 1,
+        "l": 0.89
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2b2a2e",
+       "share": 0.58
+      },
+      {
+       "color": "#625e68",
+       "share": 0.39
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      },
+      {
+       "color": "#f6f5f3",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#a63a5c",
+      "hsl": {
+       "h": 341,
+       "s": 0.48,
+       "l": 0.44
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Email me",
+      "See the work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 16,
+     "squareMedia": 1,
+     "roundedMedia": 7,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.49
+     },
+     {
+      "type": "img",
+      "ratio": 0.49
+     },
+     {
+      "type": "img",
+      "ratio": 0.49
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "eb garamond"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5095,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 64,
+      "height": 836,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Alexis Mayer,",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 188,
+      "right": 882,
+      "textLeft": 188,
+      "textRight": 882,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.work",
+      "tag": "section",
+      "top": 900,
+      "height": 1108,
+      "words": 46,
+      "media": 1,
+      "middle": 24,
+      "heading": {
+       "text": "Lumen",
+       "size": 80,
+       "tag": "span"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#about.about",
+      "tag": "section",
+      "top": 2208,
+      "height": 852,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A short letter",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 460,
+      "right": 466,
+      "textLeft": 460,
+      "textRight": 466,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.experience",
+      "tag": "section",
+      "top": 3061,
+      "height": 768,
+      "words": 49,
+      "media": 0,
+      "middle": 188,
+      "heading": {
+       "text": "Experience and practice",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 192,
+      "right": 192,
+      "textLeft": 192,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact",
+      "tag": "section",
+      "top": 3829,
+      "height": 900,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start a project",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 980,
+      "right": 104,
+      "textLeft": 980,
+      "textRight": 104,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4729,
+      "height": 366,
+      "words": 94,
+      "media": 0,
+      "middle": 552,
+      "heading": null,
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Alexis Mayer, designer who codes",
+      "size": 56,
+      "top": 282,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 460,
+      "n": 4
+     },
+     {
+      "x": 32,
+      "n": 1
+     },
+     {
+      "x": 192,
+      "n": 1
+     },
+     {
+      "x": 520,
+      "n": 1
+     },
+     {
+      "x": 849,
+      "n": 1
+     },
+     {
+      "x": 980,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 21,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 180,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.85,
+    0.66,
+    0.81,
+    0.64,
+    0.66,
+    0.71,
+    0.72
+   ],
+   "motion": {
+    "elements": 99,
+    "css": 61,
+    "transitions": 38,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6642,
+     "screens": 6.5,
+     "words": 434,
+     "img": 11,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-842.jpg",
+      "hero-93.jpg",
+      "hero-994.jpg",
+      "lumen-desk.jpg",
+      "northwind-elevation.jpg",
+      "pulse-woven.jpg",
+      "fieldnotes-sketch.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Alexis Mayer, designer who codes",
+     "words": 5,
+     "chars": 32,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "EB Garamond",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.1,
+     "upper": false,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.34,
+     "top": 608,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Alexis Mayer, designer who codes",
+     "words": 5,
+     "lines": 2,
+     "size": 40,
+     "font": "EB Garamond"
+    },
+    "headings": [
+     {
+      "text": "Alexis Mayer, designer who codes",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.34,
+      "top": 608,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected work",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 26.9,
+      "vw": 3.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1126,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lumen",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 73,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1680,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Northwind Studio",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 73,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 2361,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Pulse",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 73,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 3041,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Fieldnotes",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 73,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 3722,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "A short letter",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 26.9,
+      "vw": 3.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 4110,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Alexis Mayer",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 26.9,
+      "vw": 3.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.68,
+      "top": 4496,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Experience and practice",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 26.9,
+      "vw": 3.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4778,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start a project",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 26.9,
+      "vw": 3.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 5349,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 1,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "EB Garamond",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      16,
+      19,
+      27,
+      40,
+      73
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "EB Garamond",
+      "size": 19.1,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.3
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 73,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "text": "Lumen"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f6f5f3",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 532,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#ffd3e2",
+       "top": 64,
+       "hsl": {
+        "h": 340,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f6f5f3",
+       "top": 1006,
+       "hsl": {
+        "h": 40,
+        "s": 0.14,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#fff0b8",
+       "top": 1205,
+       "hsl": {
+        "h": 47,
+        "s": 1,
+        "l": 0.86
+       }
+      },
+      {
+       "color": "#cfe5ff",
+       "top": 1886,
+       "hsl": {
+        "h": 213,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#c8f0de",
+       "top": 2566,
+       "hsl": {
+        "h": 153,
+        "s": 0.57,
+        "l": 0.86
+       }
+      },
+      {
+       "color": "#ffd8c9",
+       "top": 3247,
+       "hsl": {
+        "h": 17,
+        "s": 1,
+        "l": 0.89
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2b2a2e",
+       "share": 0.68
+      },
+      {
+       "color": "#625e68",
+       "share": 0.3
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      },
+      {
+       "color": "#f6f5f3",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#a63a5c",
+      "hsl": {
+       "h": 341,
+       "s": 0.48,
+       "l": 0.44
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Email me",
+      "See the work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 16,
+     "squareMedia": 1,
+     "roundedMedia": 7,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.55
+     },
+     {
+      "type": "img",
+      "ratio": 0.55
+     },
+     {
+      "type": "img",
+      "ratio": 0.55
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "eb garamond"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6642,
+    "margins": {
+     "left": 17,
+     "right": 17
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 64,
+      "height": 942,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 220,
+      "right": 220,
+      "textLeft": 220,
+      "textRight": 220,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.work",
+      "tag": "section",
+      "top": 1006,
+      "height": 2881,
+      "words": 106,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Lumen",
+       "size": 73,
+       "tag": "span"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 17,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about",
+      "tag": "section",
+      "top": 4007,
+      "height": 651,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A short letter",
+       "size": 27,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 135,
+      "textLeft": 124,
+      "textRight": 135,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.experience",
+      "tag": "section",
+      "top": 4658,
+      "height": 600,
+      "words": 49,
+      "media": 0,
+      "middle": 64,
+      "heading": {
+       "text": "Experience and practice",
+       "size": 27,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 17,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact",
+      "tag": "section",
+      "top": 5257,
+      "height": 1024,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start a project",
+       "size": 27,
+       "tag": "h2"
+      },
+      "left": 323,
+      "right": 89,
+      "textLeft": 323,
+      "textRight": 89,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 6281,
+      "height": 361,
+      "words": 94,
+      "media": 0,
+      "middle": 151,
+      "heading": null,
+      "left": 17,
+      "right": 17,
+      "textLeft": 17,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Alexis Mayer, designer who codes",
+      "size": 40,
+      "top": 608,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 124,
+      "n": 4
+     },
+     {
+      "x": 17,
+      "n": 2
+     },
+     {
+      "x": 184,
+      "n": 1
+     },
+     {
+      "x": 323,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.89,
+    0.62,
+    0.71,
+    0.77,
+    0.5,
+    0.68,
+    0.48
+   ],
+   "motion": {
+    "elements": 96,
+    "css": 61,
+    "transitions": 35,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5899,
+     "screens": 7,
+     "words": 430,
+     "img": 11,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-842.jpg",
+      "hero-93.jpg",
+      "hero-994.jpg",
+      "lumen-desk.jpg",
+      "northwind-elevation.jpg",
+      "pulse-woven.jpg",
+      "fieldnotes-sketch.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Alexis Mayer, designer who codes",
+     "words": 5,
+     "chars": 32,
+     "lines": 2,
+     "size": 31.2,
+     "vw": 8,
+     "font": "EB Garamond",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.1,
+     "upper": false,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.53,
+     "top": 521,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Alexis Mayer, designer who codes",
+     "words": 5,
+     "lines": 2,
+     "size": 31.2,
+     "font": "EB Garamond"
+    },
+    "headings": [
+     {
+      "text": "Alexis Mayer, designer who codes",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 31.2,
+      "vw": 8,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 521,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected work",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1010,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lumen",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 37.1,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1326,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Northwind Studio",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 37.1,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 1758,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Pulse",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 37.1,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 2190,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Fieldnotes",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 37.1,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2623,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "A short letter",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 2999,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Alexis Mayer",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3477,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Experience and practice",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3754,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Start a project",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "EB Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 4994,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 1,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "EB Garamond",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      18,
+      24,
+      31,
+      37
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "EB Garamond",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.3
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 37.1,
+      "vw": 9.5,
+      "font": "EB Garamond",
+      "text": "Lumen"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.09,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f6f5f3",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.14,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 445,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#ffd3e2",
+       "top": 64,
+       "hsl": {
+        "h": 340,
+        "s": 1,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f6f5f3",
+       "top": 890,
+       "hsl": {
+        "h": 40,
+        "s": 0.14,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#ffd8c9",
+       "top": 2895,
+       "hsl": {
+        "h": 17,
+        "s": 1,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#cfe5ff",
+       "top": 4459,
+       "hsl": {
+        "h": 213,
+        "s": 1,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2b2a2e",
+       "share": 0.68
+      },
+      {
+       "color": "#625e68",
+       "share": 0.29
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      },
+      {
+       "color": "#f6f5f3",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#a63a5c",
+      "hsl": {
+       "h": 341,
+       "s": 0.48,
+       "l": 0.44
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Email me",
+      "See the work"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 16,
+     "squareMedia": 1,
+     "roundedMedia": 7,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.55
+     },
+     {
+      "type": "img",
+      "ratio": 0.55
+     },
+     {
+      "type": "img",
+      "ratio": 0.55
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "eb garamond"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5899,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 64,
+      "height": 826,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Alexis Mayer,",
+       "size": 31,
+       "tag": "h1"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.work",
+      "tag": "section",
+      "top": 890,
+      "height": 1885,
+      "words": 106,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Lumen",
+       "size": 37,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about",
+      "tag": "section",
+      "top": 2895,
+      "height": 738,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A short letter",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 34,
+      "textLeft": 16,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#experience.experience",
+      "tag": "section",
+      "top": 3634,
+      "height": 826,
+      "words": 49,
+      "media": 0,
+      "middle": 28,
+      "heading": {
+       "text": "Experience and practice",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact",
+      "tag": "section",
+      "top": 4459,
+      "height": 981,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5440,
+      "height": 459,
+      "words": 94,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Alexis Mayer, designer who codes",
+      "size": 31,
+      "top": 521,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 6
+     },
+     {
+      "x": 40,
+      "n": 1
+     },
+     {
+      "x": 76,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\desktop-page-01.jpg",
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\tablet-page-01.jpg",
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\alexi\\Documents\\Test\\portfolio\\.taste-skill\\after\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

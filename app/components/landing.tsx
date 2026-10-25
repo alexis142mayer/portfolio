@@ -2,20 +2,16 @@
 import { useTranslation } from "react-i18next";
 import AnimatedContent from "../utils/ReactBits/AnimatedContent";
 import LiquidChrome from "../utils/ReactBits/LiquidChrome";
-import { useState, useEffect } from "react";
+import { useDarkMode } from "../utils/useDarkMode";
 
 
 export default function Landing() {
     const {t} = useTranslation();
-    const [darkMode, setDarkMode] = useState(false);
-
-    useEffect(() => {
-        return setDarkMode(document.documentElement.classList.contains("dark"));
-    });
+    const { darkMode } = useDarkMode();
     
     return <div className="h-screen w-full flex flex-col justify-center items-center text-center">
         <LiquidChrome
-        baseColor={darkMode ? [0.1, 0.1, 0.1] : [0.3, 0.3, 0.3]}
+        baseColor={darkMode ? [0.1, 0.1, 0.3] : [0.3, 0.3, 0.5]}
         speed={0.2}
         amplitude={0.3}
         interactive={false}

@@ -1,0 +1,50 @@
+[
+ {
+  "file": "public/assets/clouds.webm",
+  "media": "video",
+  "poster": "public/assets/clouds-poster.jpg",
+  "ref": "commons:146241904",
+  "title": "Clouds above Japan - 2019 4 1",
+  "creator": "Nesnad",
+  "creatorUrl": null,
+  "date": "2019-04-01",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Clouds_above_Japan_-_2019_4_1.webm",
+  "via": "Wikimedia Commons",
+  "video": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fd/Clouds_above_Japan_-_2019_4_1.webm/Clouds_above_Japan_-_2019_4_1.webm.480p.vp9.webm",
+  "width": 854,
+  "height": 480,
+  "duration": 26.3,
+  "bytes": 1508464,
+  "credit": "\"Clouds above Japan - 2019 4 1\" by Nesnad, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-10-25T13:59:06.809Z"
+ },
+ {
+  "file": "public/assets/project-a-quantum.jpg",
+  "media": "image",
+  "ref": "openverse:4ab7749d-21a2-4ae4-81b9-a11859c08022",
+  "title": "Dilution Refrigerator (39016294284)",
+  "creator": "UCL Mathematical & Physical Sciences from London, UK",
+  "creatorUrl": "https://www.flickr.com/people/93636241@N07",
+  "date": null,
+  "license": "CC BY 2.0",
+  "licenseCode": "by",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=97277544",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Dilution_Refrigerator_%2839016294284%29.jpg/1920px-Dilution_Refrigerator_%2839016294284%29.jpg",
+  "width": 1920,
+  "height": 2560,
+  "bytes": 1504977,
+  "credit": "\"Dilution Refrigerator (39016294284)\" by UCL Mathematical & Physical Sciences from London, UK, CC BY 2.0, via Wikimedia Commons",
+  "notes": [],
+  "saved": "2026-10-25T14:37:38.475Z"
+ }
+]
