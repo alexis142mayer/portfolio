@@ -80,7 +80,7 @@ const en = {
       alt: 'The gold and copper stages of a dilution refrigerator, the cooling core of a quantum computer, in a lab',
       objective:
         'Create a web-based solution to evaluate the effectiveness of many artificial intelligence facial recognition algorithms. Run the scenario between different physical stations with live participants. After capturing the data, build reports and statistics for upper management to make a decision and move to the next phase of the project (out of 5).',
-      role: 'For this solution, I acted as developer and consulted with senior colleagues. Unfortunately, I was moved away from the project before finishing the web platform for reasons such as funding and resource issues.',
+      role: 'I was the developer and consulted with senior colleagues. I was moved off the project before the web platform was finished, mostly because of funding and resource issues.',
     },
     {
       title: 'Project B',
@@ -88,7 +88,7 @@ const en = {
       alt: 'A misty coastline with sea stacks and a forested headland, seen across dune grass',
       objective:
         'Conceive a rapid solution enabling field users to effectively enter data about cases from their computers or mobile devices. Migrate data from the legacy system and configure a reporting dashboard based on the new data source.',
-      role: 'For this solution, I acted as developer and collaborated with 6 team members.',
+      role: 'I was a developer and worked with 6 team members.',
     },
     {
       title: 'Project C',
@@ -96,7 +96,7 @@ const en = {
       alt: 'A hand holding a phone that shows a map app with location pins',
       objective:
         'Create a fast-paced solution for technical and non-technical users to create requests and collaborate on the online forms. Migrate data from the legacy system and configure a reporting dashboard based on the new data source.',
-      role: 'For this solution, I acted as team lead and managed my resources and the client’s expectations.',
+      role: 'I was the team lead, managing my resources and the client’s expectations.',
     },
     {
       title: 'Project D',
@@ -104,7 +104,7 @@ const en = {
       alt: 'A stone doorway with “Employees” carved above a black door',
       objective:
         'Develop a fast-paced solution for upper management to submit overtime requests for subordinates and escalate them for approval. Migrate data from the previous solution and configure a reporting dashboard based on the new data source.',
-      role: 'For this solution, I acted as team lead and managed my resources and the client’s expectations.',
+      role: 'I was the team lead, managing my resources and the client’s expectations.',
     },
   ]),
   about: {
@@ -211,7 +211,7 @@ const fr = {
       alt: 'Les étages dorés et cuivrés d’un réfrigérateur à dilution, le cœur de refroidissement d’un ordinateur quantique, dans un laboratoire',
       objective:
         'Concevoir une solution web pour évaluer l’efficacité de plusieurs algorithmes de reconnaissance faciale basés sur l’intelligence artificielle. Mettre en œuvre ce scénario entre différents postes de travail avec des participants. Après la collecte des données, générer des rapports et statistiques pour les gestionnaires afin de faciliter la prise de décision et le passage à la phase suivante du projet (sur 5).',
-      role: 'Pour cette solution, j’ai travaillé comme développeur et j’ai consulté des collègues plus expérimentés. Malheureusement, j’ai dû quitter le projet avant de terminer la plateforme web, notamment pour des raisons de financement et de ressources.',
+      role: 'J’étais le développeur et je consultais des collègues plus expérimentés. J’ai quitté le projet avant la fin de la plateforme web, surtout pour des raisons de financement et de ressources.',
     },
     {
       title: 'Projet B',
@@ -219,7 +219,7 @@ const fr = {
       alt: 'Une côte brumeuse avec des rochers et un cap boisé, vue à travers les herbes des dunes',
       objective:
         'Concevoir une solution rapide permettant aux utilisateurs sur le terrain de saisir efficacement des données sur les cas depuis leurs ordinateurs ou appareils mobiles. Migrer les données du système existant et configurer un tableau de reportage basé sur la nouvelle source de données.',
-      role: 'Pour cette solution, j’ai agi en tant que développeur et j’ai collaboré avec 6 membres de l’équipe.',
+      role: 'J’étais développeur et je travaillais avec 6 membres de l’équipe.',
     },
     {
       title: 'Projet C',
@@ -227,7 +227,7 @@ const fr = {
       alt: 'Une main tenant un téléphone qui affiche une carte avec des repères',
       objective:
         'Concevoir une solution rapide permettant aux utilisateurs, qu’ils soient experts techniques ou non, de créer des demandes et de collaborer sur des formulaires en ligne. Migrer les données du système existant et configurer un tableau de reportage basé sur la nouvelle source de données.',
-      role: 'Pour cette solution, j’ai agi en tant que chef d’équipe et j’ai géré mes ressources ainsi que les attentes des clients.',
+      role: 'J’étais chef d’équipe : je gérais mes ressources ainsi que les attentes des clients.',
     },
     {
       title: 'Projet D',
@@ -235,7 +235,7 @@ const fr = {
       alt: 'Une entrée en pierre surmontée du mot « Employees » gravé, au-dessus d’une porte noire',
       objective:
         'Concevoir une solution rapide permettant à la direction de soumettre des demandes d’heures supplémentaires pour leurs subordonnés et de les faire remonter pour approbation. Migrer les données de la solution précédente et configurer un tableau de reportage basé sur la nouvelle source de données.',
-      role: 'Pour cette solution, j’ai agi en tant que chef d’équipe et j’ai géré mes ressources ainsi que les attentes des clients.',
+      role: 'J’étais chef d’équipe : je gérais mes ressources ainsi que les attentes des clients.',
     },
   ]),
   about: {
