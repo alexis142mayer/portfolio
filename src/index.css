@@ -61,6 +61,11 @@
   --radius: 28px;
   --radius-small: 18px;
   --bar: 64px;
+
+  /* What the Dynamic Island, notch and status bar cover; 0 where there is none. */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
 }
 
 *,
@@ -71,12 +76,15 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--bar) + var(--m));
+  scroll-padding-top: calc(var(--bar) + var(--m) + var(--safe-top));
+  /* Safari paints this behind the status bar, so the page runs up under the island. */
+  background: var(--canvas);
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  padding-inline: var(--safe-left) var(--safe-right);
   background: var(--canvas);
   color: var(--ink);
   font-family: var(--text);
@@ -305,13 +313,13 @@ a {
 
 .bar {
   position: sticky;
-  top: var(--m);
+  top: calc(var(--m) + var(--safe-top));
   z-index: 20;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   height: var(--bar);
-  margin: var(--m) var(--m) 0;
+  margin: calc(var(--m) + var(--safe-top)) var(--m) 0;
   padding-inline: var(--pad);
   border-radius: var(--radius) var(--radius) 0 0;
   background: var(--paper);
@@ -329,7 +337,7 @@ a {
 }
 
 .bar[data-hidden] {
-  transform: translateY(calc(-100% - var(--m) - 4px));
+  transform: translateY(calc(-100% - var(--m) - var(--safe-top) - 4px));
 }
 
 .bar-nav {
