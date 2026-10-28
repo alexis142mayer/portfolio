@@ -24,14 +24,16 @@
   --signal: #e0263c;
   --sage: #cfe0d6;
   --sage-ink: #1b2b23;
+  /* The work field's gradient ends, dark enough for paper text: 5.55:1 and 5.01:1. */
+  --field-blue: #4f6886;
+  --field-coral: #b04f44;
+  --on-field-line: rgb(252 251 248 / 0.5);
 
   /* Translucent steps of the colours above, one set per surface. */
   --line: rgb(22 23 26 / 0.12); /* hairlines on paper */
   --line-strong: rgb(22 23 26 / 0.3);
   --on-dark-line: rgb(242 242 239 / 0.14); /* hairlines on charcoal */
   --on-dark-line-strong: rgb(242 242 239 / 0.3);
-  --on-field-muted: rgb(252 251 248 / 0.88); /* text on the colour field */
-  --on-field-chip: rgb(252 251 248 / 0.18);
   --paper-glass: rgb(252 251 248 / 0.8);
   --paper-veil: rgb(252 251 248 / 0.1);
   --charcoal-glass: rgb(27 29 32 / 0.55);
@@ -85,7 +87,7 @@ html {
 body {
   margin: 0;
   padding-inline: var(--safe-left) var(--safe-right);
-  background: var(--canvas);
+  /* No background here: html carries --canvas, and a body fill would paint over the glows. */
   color: var(--ink);
   font-family: var(--text);
   font-size: var(--step-body);
@@ -96,6 +98,7 @@ body {
 
 h1,
 h2,
+h3,
 p,
 figure,
 dl,
@@ -133,7 +136,7 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--coral);
+  outline: 2px solid var(--ink);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -226,6 +229,11 @@ a {
   color: var(--on-dark);
 }
 
+.panel-dark :focus-visible,
+.work-field :focus-visible {
+  outline-color: var(--paper);
+}
+
 .section-title {
   font-family: var(--display);
   font-size: var(--step-lead);
@@ -292,7 +300,9 @@ a {
 
 .text-button {
   display: inline-grid;
-  padding: 4px 0;
+  align-content: center;
+  min-height: 44px;
+  padding: 0;
   border: 0;
   background: none;
   color: inherit;
@@ -362,8 +372,11 @@ a {
 }
 
 .mark {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-stretch: 125%;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -382,12 +395,12 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 4px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: none;
-  font: 500 12px / 1 var(--text);
+  font: 500 0.75rem / 1 var(--text);
   cursor: pointer;
   transition:
     transform 160ms var(--ease-out),
@@ -422,7 +435,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 16px;
   border-radius: 999px;
   background: var(--sage);
@@ -547,6 +560,29 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Pause and play for the looping clouds. */
+.video-toggle {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  fill: currentColor;
+  cursor: pointer;
+  transition: transform 160ms var(--ease-out);
+}
+
+.video-toggle:active {
+  transform: scale(0.94);
 }
 
 @media (max-width: 800px) {
@@ -674,7 +710,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: var(--pad);
-  background: linear-gradient(115deg, var(--blue) 0%, var(--coral) 58%, var(--crimson) 100%);
+  background: linear-gradient(115deg, var(--field-blue) 0%, var(--field-coral) 58%, var(--crimson) 100%);
   color: var(--paper);
 }
 
@@ -686,7 +722,7 @@ a {
 .work-note {
   max-width: 52ch;
   font-size: var(--step-small);
-  color: var(--on-field-muted);
+  color: var(--paper);
 }
 
 .work-index {
@@ -704,7 +740,7 @@ a {
   border: 0;
   background: none;
   color: var(--paper);
-  opacity: 0.55;
+  opacity: 0.7;
   font: inherit;
   text-align: left;
   white-space: nowrap;
@@ -750,7 +786,7 @@ a {
   max-width: 60ch;
   font-size: var(--step-small);
   line-height: 1.6;
-  color: var(--on-field-muted);
+  color: var(--paper);
 }
 
 .details dt {
@@ -771,8 +807,8 @@ a {
 
 .tech li {
   padding: 4px 12px;
+  border: 1px solid var(--on-field-line);
   border-radius: 999px;
-  background: var(--on-field-chip);
   color: var(--paper);
   white-space: nowrap;
 }
@@ -816,8 +852,8 @@ a {
   position: absolute;
   right: var(--pad);
   bottom: var(--pad);
-  width: 148px;
-  height: 148px;
+  width: 9.25rem;
+  height: 9.25rem;
   padding: 16px;
   background: var(--signal);
   color: var(--paper);
@@ -832,7 +868,7 @@ a {
 
 .badge-year {
   font-family: var(--display);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1;
 }
@@ -859,7 +895,7 @@ a {
   }
   .work-thumb {
     display: block;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: var(--radius-small);
   }
@@ -1002,7 +1038,7 @@ a {
   font-family: var(--display);
   font-size: var(--step-lead);
   font-stretch: 125%;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--sage);
 }
 
@@ -1115,6 +1151,12 @@ a {
   .letter {
     column-count: 1;
   }
+  .about {
+    min-height: auto;
+  }
+  .about::after {
+    background: linear-gradient(180deg, var(--scrim) 0%, var(--scrim-mid) 20%, var(--scrim-deep) 45%);
+  }
   .news-card {
     flex-direction: column;
     height: auto;
@@ -1166,13 +1208,6 @@ a {
   gap: 12px;
   min-height: 52px;
   border-top: 1px solid var(--line);
-}
-
-.list-dot {
-  flex: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
 }
 
 .list-name {
@@ -1279,7 +1314,7 @@ a {
   gap: 16px;
   font-family: var(--display);
   font-size: var(--step-lead);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .copy-label {
@@ -1323,7 +1358,7 @@ a {
 .need span {
   display: inline-flex;
   align-items: center;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 16px;
   border: 1px solid var(--on-dark-line-strong);
   border-radius: 999px;
@@ -1348,7 +1383,7 @@ a {
 }
 
 .need input:focus-visible + span {
-  outline: 2px solid var(--coral);
+  outline: 2px solid var(--paper);
   outline-offset: 2px;
 }
 
@@ -1364,6 +1399,7 @@ a {
 
 .facts div {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding: 8px 0;
@@ -1378,6 +1414,13 @@ a {
 .facts dd {
   text-align: right;
   font-variant-numeric: tabular-nums;
+}
+
+.facts a,
+.contact-email a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .contact-card .button-block {
@@ -1430,6 +1473,9 @@ a {
 }
 
 .footer-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 0;
   border: 0;
   background: none;
@@ -1449,6 +1495,27 @@ a {
 
 .credits:not([hidden]) {
   animation: fade-up 300ms var(--ease-out) both;
+}
+
+/* ---------- Reduced transparency and increased contrast: solid surfaces ---------- */
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .bar[data-scrolled] {
+    background: var(--paper);
+  }
+
+  .news-card,
+  .contact-card {
+    background: var(--charcoal);
+    color: var(--on-dark);
+  }
+
+  .bar[data-scrolled],
+  .news-card,
+  .contact-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 
 /* ---------- Reduced motion: keep the fades, drop the travel ---------- */
@@ -1564,7 +1631,7 @@ html[lang='fr'] .hero-title {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 40px;
+  min-height: 44px;
   font-weight: 500;
   color: var(--paper);
   list-style: none;

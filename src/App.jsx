@@ -186,6 +186,20 @@ function useParallaxFallback() {
   }, []);
 }
 
+// True while the media query matches; follows resizes and rotation.
+function useMediaQuery(query) {
+  const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
+
+  useEffect(() => {
+    const list = window.matchMedia(query);
+    const onChange = () => setMatches(list.matches);
+    list.addEventListener('change', onChange);
+    return () => list.removeEventListener('change', onChange);
+  }, [query]);
+
+  return matches;
+}
+
 // Slow crossfade between photographs, paused while the tab is hidden.
 function useSlowCrossfade(count, hold = 5500) {
   const [index, setIndex] = useState(0);
@@ -276,6 +290,15 @@ function Header({ active }) {
 
 function Hero() {
   const { t } = useLang();
+  const video = useRef(null);
+  // Reduced motion starts the clouds still; the button plays them on request.
+  const [playing, setPlaying] = useState(() => !prefersReducedMotion());
+
+  const togglePlay = () => {
+    if (playing) video.current.pause();
+    else video.current.play();
+    setPlaying(!playing);
+  };
 
   return (
     <section className="hero panel panel-light" id="top" aria-labelledby="hero-title">
@@ -305,16 +328,27 @@ function Hero() {
       <div className="hero-media">
         <div className="hero-media-inner" data-parallax="media">
           <video
+            ref={video}
             className="hero-video"
             src="/assets/clouds.webm"
             poster="/assets/clouds-poster.jpg"
-            autoPlay
+            autoPlay={playing}
             muted
             loop
             playsInline
             aria-label={t.hero.video}
           />
         </div>
+        <button
+          type="button"
+          className="video-toggle"
+          onClick={togglePlay}
+          aria-label={playing ? t.hero.pause : t.hero.play}
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+            {playing ? <path d="M4 2h3v12H4zM9 2h3v12H9z" /> : <path d="M4 2l10 6-10 6z" />}
+          </svg>
+        </button>
       </div>
     </section>
   );
@@ -350,6 +384,8 @@ function ProjectDetails({ project }) {
 function Work() {
   const { t } = useLang();
   const [active, setActive] = useState(0);
+  // Phones show each project's photo inline, so the names have nothing to switch.
+  const narrow = useMediaQuery('(max-width: 800px)');
   const projects = t.projects;
   const project = projects[active];
 
@@ -370,17 +406,23 @@ function Work() {
               <figure className="work-thumb rise" style={{ '--i': 0 }}>
                 <img src={p.image} alt={p.alt} width="1400" height="1800" loading="lazy" />
               </figure>
-              <button
-                type="button"
-                className="work-name rise"
-                style={{ '--i': 1 }}
-                aria-pressed={active === i}
-                onMouseEnter={() => setActive(i)}
-                onFocus={() => setActive(i)}
-                onClick={() => setActive(i)}
-              >
-                <span className="work-title">{p.title}</span>
-              </button>
+              {narrow ? (
+                <h3 className="work-name rise" style={{ '--i': 1 }}>
+                  <span className="work-title">{p.title}</span>
+                </h3>
+              ) : (
+                <button
+                  type="button"
+                  className="work-name rise"
+                  style={{ '--i': 1 }}
+                  aria-pressed={active === i}
+                  onMouseEnter={() => setActive(i)}
+                  onFocus={() => setActive(i)}
+                  onClick={() => setActive(i)}
+                >
+                  <span className="work-title">{p.title}</span>
+                </button>
+              )}
               <div className="work-desc-inline rise" style={{ '--i': 2 }}>
                 <p className="work-kind">{p.kind}</p>
                 <ul className="tech">
@@ -504,14 +546,13 @@ function About() {
   );
 }
 
-function ListGroup({ label, items, tones }) {
+function ListGroup({ label, items }) {
   return (
     <Reveal className="list-group">
       <p className="list-label rise">{label}</p>
       <ul>
         {items.map((item, i) => (
           <li key={i} className="list-row rise" style={{ '--i': i + 1 }}>
-            <span className="list-dot" style={{ background: tones[i % tones.length] }} aria-hidden="true" />
             <span className="list-name">
               <span className={item.short ? 'name-full' : undefined}>{item.name}</span>
               {item.short && <span className="name-short">{item.short}</span>}
@@ -524,8 +565,6 @@ function ListGroup({ label, items, tones }) {
   );
 }
 
-const TONES = ['var(--blue)', 'var(--coral)', 'var(--crimson)', 'var(--sage)'];
-
 function Experience() {
   const { t } = useLang();
 
@@ -537,10 +576,10 @@ function Experience() {
         </h2>
       </Reveal>
       <div className="lists">
-        <ListGroup label={t.experience.roles} items={t.roles} tones={TONES} />
+        <ListGroup label={t.experience.roles} items={t.roles} />
         <div className="lists-stack">
-          <ListGroup label={t.experience.education} items={t.education} tones={TONES} />
-          <ListGroup label={t.experience.strengths} items={t.strengths} tones={TONES} />
+          <ListGroup label={t.experience.education} items={t.education} />
+          <ListGroup label={t.experience.strengths} items={t.strengths} />
         </div>
       </div>
     </section>
@@ -581,7 +620,10 @@ function Contact() {
         <div className="contact-card rise" style={{ '--i': 1 }}>
           <p className="contact-lead">{t.contact.lead}</p>
           <p className="contact-email">
-            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            <a href={`mailto:${profile.email}`}>
+              {profile.email.split('@')[0]}@<wbr />
+              {profile.email.split('@')[1]}
+            </a>
             <button type="button" className="text-button" onClick={copy}>
               <span className="copy-label" data-hidden={copied || undefined}>
                 {t.contact.copy}

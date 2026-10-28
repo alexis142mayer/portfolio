@@ -59,6 +59,8 @@ const en = {
       'I focus on accelerated, emerging, innovative technology that can unlock long-term value and growth.',
     cta: 'See the work',
     video: 'Clouds drifting seen from above',
+    pause: 'Pause the clouds video',
+    play: 'Play the clouds video',
   },
   heroPhotos: withSrc([
     'Wooden steps descending into pale pink fog',
@@ -109,7 +111,7 @@ const en = {
   ]),
   about: {
     title: 'About Alexis Mayer',
-    newsTitle: 'Team Lead (IT-03) since November 2024',
+    newsTitle: 'Team Lead (IT‑03) since November 2024',
     newsDesc: 'At the Canada Border Services Agency, where I started as a junior developer in 2021.',
     newsLink: 'See the timeline',
   },
@@ -124,11 +126,11 @@ const en = {
   experience: { title: 'Experience and education', roles: 'Roles', education: 'Education', strengths: 'Strengths' },
   // `short` replaces `name` on phones.
   roles: [
-    { name: 'Team Lead (IT-03), Canada Border Services Agency', short: 'Team Lead (IT-03), CBSA', value: 'Nov 2024 – now' },
-    { name: 'Programmer Analyst (IT-02), Canada Border Services Agency', short: 'Programmer Analyst (IT-02), CBSA', value: 'Jan 2022 – 2024' },
+    { name: 'Team Lead (IT‑03), Canada Border Services Agency', short: 'Team Lead (IT‑03), CBSA', value: 'Nov 2024 – now' },
+    { name: 'Programmer Analyst (IT‑02), Canada Border Services Agency', short: 'Programmer Analyst (IT‑02), CBSA', value: 'Jan 2022 – 2024' },
     {
-      name: 'Junior Application Developer (IT-01), Accelerated Innovative Emerging Technologies, Canada Border Services Agency',
-      short: 'Junior Developer (IT-01), CBSA',
+      name: 'Junior Application Developer (IT‑01), Accelerated Innovative Emerging Technologies, Canada Border Services Agency',
+      short: 'Junior Developer (IT‑01), CBSA',
       value: 'Jan 2021 – 2022',
     },
     { name: 'Support ATE intern, Hawkesbury General Hospital', short: 'Support ATE intern', value: 'May – Aug 2019' },
@@ -190,6 +192,8 @@ const fr = {
       'Je me concentre sur les technologies accélérées, émergentes et innovantes qui peuvent générer de la valeur et de la croissance à long terme.',
     cta: 'Voir les projets',
     video: 'Nuages qui défilent, vus d’en haut',
+    pause: 'Mettre en pause la vidéo des nuages',
+    play: 'Lire la vidéo des nuages',
   },
   heroPhotos: withSrc([
     'Marches en bois qui descendent dans un brouillard rose pâle',
@@ -240,7 +244,7 @@ const fr = {
   ]),
   about: {
     title: 'À propos d’Alexis Mayer',
-    newsTitle: 'Chef d’équipe (IT-03) depuis novembre 2024',
+    newsTitle: 'Chef d’équipe (IT‑03) depuis novembre 2024',
     newsDesc: 'À l’Agence des services frontaliers du Canada, où j’ai commencé comme développeur junior en 2021.',
     newsLink: 'Voir le parcours',
   },
@@ -253,11 +257,11 @@ const fr = {
   ],
   experience: { title: 'Expérience et formation', roles: 'Postes', education: 'Formation', strengths: 'Forces' },
   roles: [
-    { name: 'Chef d’équipe (IT-03), Agence des services frontaliers du Canada', short: 'Chef d’équipe (IT-03), ASFC', value: 'nov. 2024 – auj.' },
-    { name: 'Programmeur analyste (IT-02), Agence des services frontaliers du Canada', short: 'Programmeur analyste (IT-02), ASFC', value: 'janv. 2022 – 2024' },
+    { name: 'Chef d’équipe (IT‑03), Agence des services frontaliers du Canada', short: 'Chef d’équipe (IT‑03), ASFC', value: 'nov. 2024 – auj.' },
+    { name: 'Programmeur analyste (IT‑02), Agence des services frontaliers du Canada', short: 'Programmeur analyste (IT‑02), ASFC', value: 'janv. 2022 – 2024' },
     {
-      name: 'Développeur d’applications junior (IT-01), Accelerated Innovative Emerging Technologies, Agence des services frontaliers du Canada',
-      short: 'Développeur junior (IT-01), ASFC',
+      name: 'Développeur d’applications junior (IT‑01), Accelerated Innovative Emerging Technologies, Agence des services frontaliers du Canada',
+      short: 'Développeur junior (IT‑01), ASFC',
       value: 'janv. 2021 – 2022',
     },
     { name: 'Stagiaire Support ATE, Hôpital général de Hawkesbury', short: 'Stagiaire Support ATE', value: 'mai – août 2019' },
