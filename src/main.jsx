@@ -1,13 +1,37 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { hydrateRoot } from 'react-dom/client';
+import '@fontsource-variable/archivo/wdth.css';
+import '@fontsource-variable/inter/wght.css';
 import './index.css';
 import App from './App.jsx';
 
-// Reveal styles hide content only once a script is here to show it again.
-document.documentElement.classList.add('js');
+const path = window.location.pathname;
+const lang = path.startsWith('/fr') ? 'fr' : 'en';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+// Readers land on their language at / only; crawlers and /fr/ links stay put.
+function preferredLang() {
+  try {
+    const saved = localStorage.getItem('lang');
+    if (saved) return saved;
+  } catch {
+    // Storage can be blocked; fall through to the browser's language.
+  }
+  return navigator.language?.toLowerCase().startsWith('fr') ? 'fr' : 'en';
+}
+
+if (path === '/' && preferredLang() === 'fr') {
+  window.location.replace(`/fr/${window.location.hash}`);
+} else {
+  // Content stays visible until the reader scrolls, so renderers that never scroll see it all.
+  window.addEventListener('scroll', () => document.documentElement.classList.add('reveal-armed'), {
+    once: true,
+    passive: true,
+  });
+
+  hydrateRoot(
+    document.getElementById('root'),
+    <StrictMode>
+      <App lang={lang} />
+    </StrictMode>,
+  );
+}

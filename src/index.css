@@ -45,8 +45,8 @@
   --marker: rgb(217 119 106 / 0.55);
   --mask: #000; /* opaque for mask layers; never painted */
 
-  --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  --text: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Archivo Variable', 'Helvetica Neue', Arial, sans-serif;
+  --text: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --step-small: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem); /* 14 → 15 */
   --step-body: clamp(1rem, 0.97rem + 0.13vw, 1.0625rem); /* 16 → 17 */
@@ -356,6 +356,9 @@ a {
 }
 
 .bar-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: var(--step-small);
   color: var(--muted);
   text-decoration: none;
@@ -400,7 +403,9 @@ a {
   border: 1px solid var(--line);
   border-radius: 999px;
   background: none;
+  color: inherit;
   font: 500 0.75rem / 1 var(--text);
+  text-decoration: none;
   cursor: pointer;
   transition:
     transform 160ms var(--ease-out),
@@ -672,7 +677,8 @@ a {
 
 /* ---------- Section entrances ---------- */
 
-.js .rise {
+/* Armed on the first scroll, so a page nobody scrolls still shows everything. */
+.reveal-armed .rise {
   opacity: 0;
   transform: translateY(24px);
 }
@@ -684,8 +690,8 @@ a {
   transition-delay: calc(var(--i, 0) * 70ms);
 }
 
-[data-visible] .rise,
-[data-visible].rise {
+.reveal-armed [data-visible] .rise,
+.reveal-armed [data-visible].rise {
   opacity: 1;
   transform: none;
 }
@@ -1023,12 +1029,15 @@ a {
 
 .wordmark-letter {
   display: block;
-  transform: translateY(105%);
   transition: transform 1000ms var(--ease-out);
   transition-delay: calc(var(--i) * 70ms);
 }
 
-[data-visible] .wordmark-letter {
+.reveal-armed .wordmark-letter {
+  transform: translateY(105%);
+}
+
+.reveal-armed [data-visible] .wordmark-letter {
   transform: none;
 }
 
@@ -1090,6 +1099,7 @@ a {
 .news-link {
   display: inline-flex;
   align-items: center;
+  min-height: 44px;
   gap: 8px;
   margin-top: 8px;
   font-size: var(--step-small);
@@ -1325,7 +1335,7 @@ a {
     transform 200ms var(--ease-out);
 }
 
-.js .copy-label[data-hidden] {
+.copy-label[data-hidden] {
   opacity: 0;
   transform: translateY(6px);
 }
@@ -1538,7 +1548,7 @@ a {
     animation: fade 300ms ease both;
   }
 
-  .js .rise {
+  .reveal-armed .rise {
     transform: none;
   }
 
@@ -1547,7 +1557,8 @@ a {
     transition-duration: 400ms;
   }
 
-  .wordmark-letter {
+  .wordmark-letter,
+  .reveal-armed .wordmark-letter {
     transform: none;
     transition: none;
   }
@@ -1567,7 +1578,7 @@ a {
     transform: none;
   }
 
-  .js .copy-label[data-hidden] {
+  .copy-label[data-hidden] {
     transform: none;
   }
 }
@@ -1585,6 +1596,36 @@ a {
   margin-bottom: 8px;
   color: var(--ink);
   font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+}
+
+.hero-resume {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink);
+  font-size: var(--step-small);
+  font-weight: 500;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 16px;
+  font-size: var(--step-small);
+}
+
+.profiles a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .contact-lead {

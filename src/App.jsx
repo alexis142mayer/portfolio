@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { LANGS, content, profile } from './content.js';
 
 const SECTION_IDS = ['work', 'about', 'experience', 'contact'];
@@ -7,50 +7,11 @@ const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: r
 
 /* ---------- Language ---------- */
 
-const LangContext = createContext({ lang: 'en', t: content.en, setLang: () => {} });
+const LangContext = createContext({ lang: 'en', t: content.en });
 
 const useLang = () => useContext(LangContext);
 
-// A ?lang= link, else the visitor's last choice, else the browser's language, else English.
-function initialLang() {
-  const param = new URLSearchParams(window.location.search).get('lang');
-  if (LANGS.includes(param)) return param;
-  try {
-    const saved = localStorage.getItem('lang');
-    if (LANGS.includes(saved)) return saved;
-  } catch {
-    // Storage can be blocked; fall through to the browser's language.
-  }
-  return navigator.language?.toLowerCase().startsWith('fr') ? 'fr' : 'en';
-}
-
-function useLanguage() {
-  const [lang, setLang] = useState(initialLang);
-  const t = content[lang];
-  const first = useRef(true);
-
-  useEffect(() => {
-    document.documentElement.lang = lang;
-    document.title = t.meta.title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', t.meta.description);
-    try {
-      localStorage.setItem('lang', lang);
-    } catch {
-      // Not remembered this time; the page still works.
-    }
-
-    // A short fade so the swap reads as a change of language, not a glitch.
-    if (first.current) {
-      first.current = false;
-      return;
-    }
-    document.querySelectorAll('main, .footer, .bar-nav').forEach((el) =>
-      el.animate([{ opacity: 0.35 }, { opacity: 1 }], { duration: 350, easing: 'ease-out' }),
-    );
-  }, [lang, t]);
-
-  return { lang, t, setLang };
-}
+const LANG_PATHS = { en: '/', fr: '/fr/' };
 
 /* ---------- Motion helpers ---------- */
 
@@ -69,7 +30,7 @@ function useReveal() {
           observer.disconnect();
         }
       },
-      { rootMargin: '0px 0px -10% 0px' },
+      { threshold: 0 },
     );
     observer.observe(node);
     return () => observer.disconnect();
@@ -186,18 +147,17 @@ function useParallaxFallback() {
   }, []);
 }
 
-// True while the media query matches; follows resizes and rotation.
+// True while the media query matches; follows resizes and rotation. The prerendered page assumes false.
 function useMediaQuery(query) {
-  const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
-
-  useEffect(() => {
-    const list = window.matchMedia(query);
-    const onChange = () => setMatches(list.matches);
-    list.addEventListener('change', onChange);
-    return () => list.removeEventListener('change', onChange);
-  }, [query]);
-
-  return matches;
+  return useSyncExternalStore(
+    (onChange) => {
+      const list = window.matchMedia(query);
+      list.addEventListener('change', onChange);
+      return () => list.removeEventListener('change', onChange);
+    },
+    () => window.matchMedia(query).matches,
+    () => false,
+  );
 }
 
 // Slow crossfade between photographs, paused while the tab is hidden.
@@ -242,23 +202,41 @@ function Backdrop() {
 }
 
 function LangToggle() {
-  const { lang, t, setLang } = useLang();
+  const { lang, t } = useLang();
   const next = lang === 'en' ? 'fr' : 'en';
 
+  const remember = () => {
+    try {
+      localStorage.setItem('lang', next);
+    } catch {
+      // Not remembered this time; the link still works.
+    }
+  };
+
   return (
-    <button
-      type="button"
-      className="lang-toggle"
-      onClick={() => setLang(next)}
-      aria-label={t.switchTo}
-      lang={next}
-    >
+    <a href={LANG_PATHS[next]} className="lang-toggle" onClick={remember} aria-label={t.switchTo} lang={next} hrefLang={next}>
       {LANGS.map((code) => (
         <span key={code} className="lang-option" data-current={code === lang || undefined} aria-hidden="true">
           {code.toUpperCase()}
         </span>
       ))}
-    </button>
+    </a>
+  );
+}
+
+// Decorative and project photographs, in the two widths generated under public/assets.
+function Photo({ name, sizes, alt = '', width, height, ...rest }) {
+  return (
+    <img
+      src={`/assets/${name}-1200.webp`}
+      srcSet={`/assets/${name}-800.webp 800w, /assets/${name}-1200.webp 1200w`}
+      sizes={sizes}
+      alt={alt}
+      width={width}
+      height={height}
+      loading="lazy"
+      {...rest}
+    />
   );
 }
 
@@ -291,8 +269,19 @@ function Header({ active }) {
 function Hero() {
   const { t } = useLang();
   const video = useRef(null);
-  // Reduced motion starts the clouds still; the button plays them on request.
-  const [playing, setPlaying] = useState(() => !prefersReducedMotion());
+  const [playing, setPlaying] = useState(true);
+
+  // Set from a script: React doesn't write `muted` to prerendered HTML, and browsers
+  // only autoplay muted video. Reduced motion starts the clouds still.
+  useEffect(() => {
+    const el = video.current;
+    el.muted = true;
+    if (prefersReducedMotion()) {
+      setPlaying(false);
+      return;
+    }
+    el.play().catch(() => setPlaying(false));
+  }, []);
 
   const togglePlay = () => {
     if (playing) video.current.pause();
@@ -320,9 +309,14 @@ function Hero() {
             <strong className="tagline">{t.hero.tagline}</strong>{' '}
             <span className="hero-intro">{t.hero.intro}</span>
           </p>
-          <a href="#work" className="button">
-            {t.hero.cta} <Arrow />
-          </a>
+          <div className="hero-actions">
+            <a href="#work" className="button">
+              {t.hero.cta} <Arrow />
+            </a>
+            <a href={profile.resume} className="hero-resume" target="_blank" rel="noreferrer">
+              {t.hero.resume}
+            </a>
+          </div>
         </div>
       </div>
       <div className="hero-media">
@@ -330,14 +324,16 @@ function Hero() {
           <video
             ref={video}
             className="hero-video"
-            src="/assets/clouds.webm"
             poster="/assets/clouds-poster.jpg"
-            autoPlay={playing}
+            preload="metadata"
             muted
             loop
             playsInline
             aria-label={t.hero.video}
-          />
+          >
+            <source src="/assets/clouds.webm" type="video/webm" />
+            <source src="/assets/clouds.mp4" type="video/mp4" />
+          </video>
         </div>
         <button
           type="button"
@@ -404,25 +400,28 @@ function Work() {
           {projects.map((p, i) => (
             <Reveal as="li" key={p.letter} className="work-row">
               <figure className="work-thumb rise" style={{ '--i': 0 }}>
-                <img src={p.image} alt={p.alt} width="1400" height="1800" loading="lazy" />
+                <Photo name={p.image} sizes="100vw" alt={p.alt} width={p.width} height={p.height} />
               </figure>
-              {narrow ? (
-                <h3 className="work-name rise" style={{ '--i': 1 }}>
-                  <span className="work-title">{p.title}</span>
-                </h3>
-              ) : (
-                <button
-                  type="button"
-                  className="work-name rise"
-                  style={{ '--i': 1 }}
-                  aria-pressed={active === i}
-                  onMouseEnter={() => setActive(i)}
-                  onFocus={() => setActive(i)}
-                  onClick={() => setActive(i)}
-                >
-                  <span className="work-title">{p.title}</span>
-                </button>
-              )}
+              <h3 className="rise" style={{ '--i': 1 }}>
+                {narrow ? (
+                  <span className="work-name">
+                    <span className="work-title">{p.title}</span>
+                    <span className="sr-only">: {p.kind}</span>
+                  </span>
+                ) : (
+                  <button
+                    type="button"
+                    className="work-name"
+                    aria-pressed={active === i}
+                    onMouseEnter={() => setActive(i)}
+                    onFocus={() => setActive(i)}
+                    onClick={() => setActive(i)}
+                  >
+                    <span className="work-title">{p.title}</span>
+                    <span className="sr-only">: {p.kind}</span>
+                  </button>
+                )}
+              </h3>
               <div className="work-desc-inline rise" style={{ '--i': 2 }}>
                 <p className="work-kind">{p.kind}</p>
                 <ul className="tech">
@@ -461,7 +460,7 @@ function Work() {
             data-current={i === active || undefined}
             aria-hidden={i === active ? undefined : 'true'}
           >
-            <img src={p.image} alt={p.alt} width="1400" height="1800" loading="lazy" />
+            <Photo name={p.image} sizes="50vw" alt={p.alt} width={p.width} height={p.height} />
           </figure>
         ))}
         <div className="badge" aria-hidden="true">
@@ -476,23 +475,22 @@ function Work() {
 }
 
 const WORDMARK = 'ALEXIS';
+const ABOUT_PHOTOS = ['hero-842', 'hero-93', 'hero-994'];
 
 function About() {
   const { t } = useLang();
-  const current = useSlowCrossfade(t.heroPhotos.length, 7000);
-  const card = t.projects[2];
+  const current = useSlowCrossfade(ABOUT_PHOTOS.length, 7000);
 
   return (
     <section className="about panel panel-dark" id="about" aria-labelledby="about-title">
       <div className="about-photos" data-parallax="about" aria-hidden="true">
-        {t.heroPhotos.map((photo, i) => (
-          <img
-            key={photo.src}
-            src={photo.src}
-            alt=""
+        {ABOUT_PHOTOS.map((name, i) => (
+          <Photo
+            key={name}
+            name={name}
+            sizes="100vw"
             width="1200"
             height="1500"
-            loading="lazy"
             className="about-photo"
             data-current={i === current || undefined}
           />
@@ -513,7 +511,7 @@ function About() {
         </h2>
         <div className="about-row">
           <figure className="news-card rise" style={{ '--i': 5 }}>
-            <img src={card.image} alt={card.alt} width="1400" height="1800" loading="lazy" />
+            <Photo name="hero-842" sizes="(max-width: 600px) 100vw, 20vw" width="1200" height="1500" />
             <figcaption>
               <span className="news-title">{t.about.newsTitle}</span>
               <span className="news-desc">{t.about.newsDesc}</span>
@@ -549,7 +547,7 @@ function About() {
 function ListGroup({ label, items }) {
   return (
     <Reveal className="list-group">
-      <p className="list-label rise">{label}</p>
+      <h3 className="list-label rise">{label}</h3>
       <ul>
         {items.map((item, i) => (
           <li key={i} className="list-row rise" style={{ '--i': i + 1 }}>
@@ -588,7 +586,7 @@ function Experience() {
 
 function Contact() {
   const { t } = useLang();
-  const [need, setNeed] = useState('project');
+  const [need, setNeed] = useState('role');
   const [copied, setCopied] = useState(false);
   const choice = t.needs.find((n) => n.id === need);
   const href = `mailto:${profile.email}?subject=${encodeURIComponent(choice.subject)}&body=${encodeURIComponent(choice.body)}`;
@@ -611,7 +609,7 @@ function Contact() {
   return (
     <section className="contact panel panel-dark" id="contact" aria-labelledby="contact-title">
       <div className="contact-media" aria-hidden="true">
-        <img src="/assets/hero-994.jpg" alt="" width="1200" height="1500" loading="lazy" className="contact-photo" />
+        <Photo name="hero-994" sizes="100vw" width="1200" height="1500" className="contact-photo" />
       </div>
       <Reveal className="contact-inner">
         <h2 id="contact-title" className="contact-title rise">
@@ -653,6 +651,17 @@ function Contact() {
               ))}
             </div>
           </fieldset>
+          {profile.sameAs.length > 0 && (
+            <ul className="profiles">
+              {profile.sameAs.map((url) => (
+                <li key={url}>
+                  <a href={url} rel="me noreferrer">
+                    {new URL(url).hostname.replace('www.', '')}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
           <dl className="facts">
             <div>
               <dt>{t.contact.phone}</dt>
@@ -692,8 +701,8 @@ function Footer() {
   return (
     <footer className="footer panel panel-dark">
       <div className="footer-line">
-        <span>
-          © {new Date().getFullYear()} {profile.name}
+        <span suppressHydrationWarning>
+          © {new Date().getFullYear()} {profile.name} · {t.footer.updated}
         </span>
         <ul className="footer-links">
           <li>
@@ -711,7 +720,7 @@ function Footer() {
       </div>
       <p className="credits" id="credits" hidden={!showCredits}>
         {t.footer.pictures}{' '}
-        <a href="https://picsum.photos/">Joe Beck, Caroline Sada, Jonathan Bean</a> via Unsplash;{' '}
+        <a href="https://unsplash.com/">Joe Beck, Caroline Sada, Jonathan Bean</a> via Unsplash;{' '}
         {t.footer.projectPhotos} <a href="https://unsplash.com/">Unsplash</a>;{' '}
         <a href="https://commons.wikimedia.org/w/index.php?curid=97277544">“Dilution Refrigerator”</a>{' '}
         {t.footer.by} UCL Mathematical &amp; Physical Sciences,{' '}
@@ -726,8 +735,8 @@ function Footer() {
   );
 }
 
-export default function App() {
-  const language = useLanguage();
+export default function App({ lang }) {
+  const language = { lang, t: content[lang] };
   const active = useActiveSection(SECTION_IDS);
   useParallaxFallback();
 

@@ -21,12 +21,13 @@
   "bytes": 1508464,
   "credit": "\"Clouds above Japan - 2019 4 1\" by Nesnad, CC BY-SA 4.0, via Wikimedia Commons",
   "notes": [
-   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence.",
+   "public/assets/clouds.mp4 is an H.264 re-encode of clouds.webm, under the same licence."
   ],
   "saved": "2026-10-25T13:59:06.809Z"
  },
  {
-  "file": "public/assets/project-a-quantum.jpg",
+  "file": "public/assets/project-a-800.webp, public/assets/project-a-1200.webp",
   "media": "image",
   "ref": "openverse:4ab7749d-21a2-4ae4-81b9-a11859c08022",
   "title": "Dilution Refrigerator (39016294284)",
@@ -46,5 +47,29 @@
   "credit": "\"Dilution Refrigerator (39016294284)\" by UCL Mathematical & Physical Sciences from London, UK, CC BY 2.0, via Wikimedia Commons",
   "notes": [],
   "saved": "2026-10-25T14:37:38.475Z"
+ },
+ {
+  "file": "public/assets/project-b-800.webp, public/assets/project-b-1200.webp",
+  "media": "image",
+  "via": "Unsplash",
+  "image": "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee",
+  "license": "Unsplash License",
+  "licenseUrl": "https://unsplash.com/license"
+ },
+ {
+  "file": "public/assets/project-c-800.webp, public/assets/project-c-1200.webp",
+  "media": "image",
+  "via": "Unsplash",
+  "image": "https://images.unsplash.com/photo-1599202860130-f600f4948364",
+  "license": "Unsplash License",
+  "licenseUrl": "https://unsplash.com/license"
+ },
+ {
+  "file": "public/assets/project-d-800.webp, public/assets/project-d-1200.webp",
+  "media": "image",
+  "via": "Unsplash",
+  "image": "https://images.unsplash.com/photo-1511984804822-e16ba72f5848",
+  "license": "Unsplash License",
+  "licenseUrl": "https://unsplash.com/license"
  }
 ]
