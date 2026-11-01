@@ -758,6 +758,14 @@ a {
   opacity: 1;
 }
 
+.work-topic {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--display);
+  font-size: var(--step-small);
+  font-weight: 500;
+}
+
 .work-title {
   display: inline-block;
   font-family: var(--display);
@@ -817,13 +825,6 @@ a {
   border-radius: 999px;
   color: var(--paper);
   white-space: nowrap;
-}
-
-.work-kind {
-  margin-bottom: 12px;
-  font-family: var(--display);
-  font-weight: 500;
-  color: var(--paper);
 }
 
 .work-stage {
@@ -1660,7 +1661,8 @@ html[lang='fr'] .hero-title {
 
 /* ---------- Phones: fewer words per screen ---------- */
 
-.name-short {
+.hero-glance,
+.hero-jump {
   display: none;
 }
 
@@ -1707,13 +1709,17 @@ html[lang='fr'] .hero-title {
   .news-card,
   .letter p:nth-child(n + 3),
   .contact-lead,
-  .facts .fact-languages,
-  .name-full {
+  .facts .fact-languages {
     display: none;
   }
 
-  .name-short {
-    display: inline;
+  .hero-glance {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .hero-jump {
+    display: inline-flex;
   }
 
   .tagline {

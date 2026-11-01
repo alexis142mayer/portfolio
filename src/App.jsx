@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { LANGS, content, profile } from './content.js';
 
 const SECTION_IDS = ['work', 'about', 'experience', 'contact'];
@@ -224,12 +225,12 @@ function LangToggle() {
   );
 }
 
-// Decorative and project photographs, in the two widths generated under public/assets.
+// Decorative and project photographs, in the three widths generated under public/assets.
 function Photo({ name, sizes, alt = '', width, height, ...rest }) {
   return (
     <img
       src={`/assets/${name}-1200.webp`}
-      srcSet={`/assets/${name}-800.webp 800w, /assets/${name}-1200.webp 1200w`}
+      srcSet={`/assets/${name}-480.webp 480w, /assets/${name}-800.webp 800w, /assets/${name}-1200.webp 1200w`}
       sizes={sizes}
       alt={alt}
       width={width}
@@ -270,6 +271,7 @@ function Hero() {
   const { t } = useLang();
   const video = useRef(null);
   const [playing, setPlaying] = useState(true);
+  const startTimer = useRef(0);
 
   // Set from a script: React doesn't write `muted` to prerendered HTML, and browsers
   // only autoplay muted video. Reduced motion starts the clouds still.
@@ -280,10 +282,13 @@ function Hero() {
       setPlaying(false);
       return;
     }
-    el.play().catch(() => setPlaying(false));
+    // The poster paints first; the video's bytes wait until the page has settled.
+    startTimer.current = setTimeout(() => el.play().catch(() => setPlaying(false)), 1500);
+    return () => clearTimeout(startTimer.current);
   }, []);
 
   const togglePlay = () => {
+    clearTimeout(startTimer.current);
     if (playing) video.current.pause();
     else video.current.play();
     setPlaying(!playing);
@@ -308,6 +313,7 @@ function Hero() {
           <p>
             <strong className="tagline">{t.hero.tagline}</strong>{' '}
             <span className="hero-intro">{t.hero.intro}</span>
+            <span className="hero-glance">{t.hero.glance}</span>
           </p>
           <div className="hero-actions">
             <a href="#work" className="button">
@@ -315,6 +321,9 @@ function Hero() {
             </a>
             <a href={profile.resume} className="hero-resume" target="_blank" rel="noreferrer">
               {t.hero.resume}
+            </a>
+            <a href="#experience" className="hero-resume hero-jump">
+              {t.nav.experience}
             </a>
           </div>
         </div>
@@ -324,8 +333,8 @@ function Hero() {
           <video
             ref={video}
             className="hero-video"
-            poster="/assets/clouds-poster.jpg"
-            preload="metadata"
+            poster="/assets/clouds-poster.webp"
+            preload="none"
             muted
             loop
             playsInline
@@ -406,7 +415,8 @@ function Work() {
                 {narrow ? (
                   <span className="work-name">
                     <span className="work-title">{p.title}</span>
-                    <span className="sr-only">: {p.kind}</span>
+                    <span className="sr-only">: </span>
+                    <span className="work-topic">{p.kind}</span>
                   </span>
                 ) : (
                   <button
@@ -418,18 +428,18 @@ function Work() {
                     onClick={() => setActive(i)}
                   >
                     <span className="work-title">{p.title}</span>
-                    <span className="sr-only">: {p.kind}</span>
+                    <span className="sr-only">: </span>
+                    <span className="work-topic">{p.kind}</span>
                   </button>
                 )}
               </h3>
               <div className="work-desc-inline rise" style={{ '--i': 2 }}>
-                <p className="work-kind">{p.kind}</p>
                 <ul className="tech">
                   {p.technologies.map((tech) => (
                     <li key={tech}>{tech}</li>
                   ))}
                 </ul>
-                <details className="work-more">
+                <details className="work-more" open={i === 0}>
                   <summary>{t.work.more}</summary>
                   <dl className="details">
                     <div>
@@ -545,6 +555,8 @@ function About() {
 }
 
 function ListGroup({ label, items }) {
+  const phone = useMediaQuery('(max-width: 600px)');
+
   return (
     <Reveal className="list-group">
       <h3 className="list-label rise">{label}</h3>
@@ -552,8 +564,7 @@ function ListGroup({ label, items }) {
         {items.map((item, i) => (
           <li key={i} className="list-row rise" style={{ '--i': i + 1 }}>
             <span className="list-name">
-              <span className={item.short ? 'name-full' : undefined}>{item.name}</span>
-              {item.short && <span className="name-short">{item.short}</span>}
+              {phone && item.short ? item.short : item.name}
             </span>
             <span className="list-value">{item.value}</span>
           </li>
@@ -752,6 +763,7 @@ export default function App({ lang }) {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </LangContext.Provider>
   );
 }

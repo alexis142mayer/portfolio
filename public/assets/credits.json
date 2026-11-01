@@ -2,7 +2,7 @@
  {
   "file": "public/assets/clouds.webm",
   "media": "video",
-  "poster": "public/assets/clouds-poster.jpg",
+  "poster": "public/assets/clouds-poster.webp",
   "ref": "commons:146241904",
   "title": "Clouds above Japan - 2019 4 1",
   "creator": "Nesnad",
@@ -27,7 +27,7 @@
   "saved": "2026-10-25T13:59:06.809Z"
  },
  {
-  "file": "public/assets/project-a-800.webp, public/assets/project-a-1200.webp",
+  "file": "public/assets/project-a-480.webp, public/assets/project-a-800.webp, public/assets/project-a-1200.webp",
   "media": "image",
   "ref": "openverse:4ab7749d-21a2-4ae4-81b9-a11859c08022",
   "title": "Dilution Refrigerator (39016294284)",
@@ -49,7 +49,7 @@
   "saved": "2026-10-25T14:37:38.475Z"
  },
  {
-  "file": "public/assets/project-b-800.webp, public/assets/project-b-1200.webp",
+  "file": "public/assets/project-b-480.webp, public/assets/project-b-800.webp, public/assets/project-b-1200.webp",
   "media": "image",
   "via": "Unsplash",
   "image": "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee",
@@ -57,7 +57,7 @@
   "licenseUrl": "https://unsplash.com/license"
  },
  {
-  "file": "public/assets/project-c-800.webp, public/assets/project-c-1200.webp",
+  "file": "public/assets/project-c-480.webp, public/assets/project-c-800.webp, public/assets/project-c-1200.webp",
   "media": "image",
   "via": "Unsplash",
   "image": "https://images.unsplash.com/photo-1599202860130-f600f4948364",
@@ -65,7 +65,7 @@
   "licenseUrl": "https://unsplash.com/license"
  },
  {
-  "file": "public/assets/project-d-800.webp, public/assets/project-d-1200.webp",
+  "file": "public/assets/project-d-480.webp, public/assets/project-d-800.webp, public/assets/project-d-1200.webp",
   "media": "image",
   "via": "Unsplash",
   "image": "https://images.unsplash.com/photo-1511984804822-e16ba72f5848",

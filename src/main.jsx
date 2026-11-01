@@ -22,6 +22,11 @@ function preferredLang() {
 if (path === '/' && preferredLang() === 'fr') {
   window.location.replace(`/fr/${window.location.hash}`);
 } else {
+  // Vercel's ?lang=fr redirect keeps the query; the path already carries the language.
+  if (new URLSearchParams(window.location.search).has('lang')) {
+    window.history.replaceState(null, '', path + window.location.hash);
+  }
+
   // Content stays visible until the reader scrolls, so renderers that never scroll see it all.
   window.addEventListener('scroll', () => document.documentElement.classList.add('reveal-armed'), {
     once: true,

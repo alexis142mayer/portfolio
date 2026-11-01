@@ -1,4 +1,5 @@
-// Writes the English and French pages into dist/ with their content and metadata.
+// Writes the English and French pages into dist/ with their content and metadata,
+// replacing the <!--head--> block in index.html.
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { render, content, profile } from '../dist-ssr/entry-server.js';
 
@@ -22,6 +23,7 @@ function jsonLd(lang) {
         name: t.meta.title,
         description: t.meta.description,
         inLanguage: lang,
+        dateModified: profile.updated,
         isPartOf: { '@id': `${ORIGIN}/#website` },
         mainEntity: { '@id': person },
       },
@@ -32,7 +34,12 @@ function jsonLd(lang) {
         alternateName: 'Alexis Mayer',
         url: urls.en,
         jobTitle: 'Team Lead (IT-03)',
-        worksFor: { '@type': 'GovernmentOrganization', name: 'Canada Border Services Agency', alternateName: 'CBSA' },
+        worksFor: {
+          '@type': 'GovernmentOrganization',
+          name: 'Canada Border Services Agency',
+          alternateName: ['CBSA', 'Agence des services frontaliers du Canada', 'ASFC'],
+          url: 'https://www.cbsa-asfc.gc.ca/',
+        },
         alumniOf: { '@type': 'CollegeOrUniversity', name: 'La Cité collégiale' },
         address: { '@type': 'PostalAddress', addressLocality: 'Ottawa', addressRegion: 'ON', addressCountry: 'CA' },
         knowsLanguage: ['en', 'fr'],

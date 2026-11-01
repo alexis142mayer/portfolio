@@ -10,6 +10,8 @@ export const profile = {
   resume: '/ResumeAlexisMayer.pdf',
   // Public profiles (LinkedIn, GitHub): shown beside the contact details and added to the JSON-LD.
   sameAs: [],
+  // Last real content change; also the JSON-LD dateModified.
+  updated: '2026-11-01',
 };
 
 // Language-independent parts of each project; the text lives in each language below.
@@ -62,6 +64,7 @@ const en = {
     tagline: 'Team lead at the Canada Border Services Agency.',
     intro:
       'I build secure Power Platform and web applications, and explain them to technical and non-technical people, in French and English.',
+    glance: 'Power Platform and web · bilingual · valid federal clearance',
     cta: 'See the work',
     resume: 'Résumé (PDF)',
     video: 'Clouds drifting seen from above',
@@ -82,7 +85,7 @@ const en = {
       kind: 'Artificial intelligence',
       alt: 'Gold and copper stages of a dilution refrigerator in a lab',
       objective:
-        'Build a web platform to compare the performance of AI models in supervised trials and report results to decision-makers.',
+        'Build a web platform to compare the performance of AI models in trials and report results to decision-makers.',
       role: 'I was the developer and consulted with senior colleagues. I was reassigned before the platform was completed.',
     },
     {
@@ -98,7 +101,7 @@ const en = {
       kind: 'Case management',
       alt: 'A hand holding a phone that shows a map app with location pins',
       objective:
-        'Let technical and non-technical users create requests and collaborate on online forms, replacing a legacy system, with reporting on the new data.',
+        'Let technical and non-technical users create requests and collaborate on online forms. The work included migrating data from a legacy system and configuring a reporting dashboard.',
       role: 'I was the team lead, managing the team’s resources and the client’s expectations.',
     },
     {
@@ -106,20 +109,20 @@ const en = {
       kind: 'Internal efficiency',
       alt: 'A stone doorway with “Employees” carved above a black door',
       objective:
-        'Replace an earlier overtime-request tool so that managers can submit requests for their staff and route them for approval, with existing data migrated and reporting added.',
+        'Let upper management submit overtime requests for their staff and escalate them for approval. The work included migrating data from the previous solution and configuring a reporting dashboard.',
       role: 'I led the team, managing its resources and the client’s expectations.',
     },
   ]),
   about: {
     title: 'About Alexis G. Mayer',
-    newsTitle: 'Team Lead (IT‑03) since November 2024',
+    newsTitle: 'Team Lead (IT-03) since November 2024',
     newsDesc: 'At the Canada Border Services Agency, where I started as a junior developer in 2021.',
     newsLink: 'See the timeline',
   },
   // One phrase of the letter gets the marker sweep.
-  letterMark: 'cloud and on-premises technologies',
+  letterMark: 'Power Platform',
   letter: [
-    'I am a developer and team lead based in Ottawa. My work covers gathering requirements, working with clients, training people and designing secure solutions.',
+    'Alexis G. Mayer is a developer and team lead who works in Ottawa at the Canada Border Services Agency, building secure Power Platform and web applications. My work covers gathering requirements, working with clients, training people and designing secure solutions.',
     'I learn and apply new software quickly, and I have extensive knowledge of cloud and on-premises technologies.',
     'I communicate projects at technical and non-technical levels, and I am fully bilingual in spoken and written French and English.',
     'I hold a valid federal security clearance, and I stay focused and goal-oriented while juggling several projects at once.',
@@ -127,14 +130,14 @@ const en = {
   experience: { title: 'Experience and education', roles: 'Roles', education: 'Education', strengths: 'Strengths' },
   // `short` replaces `name` on phones.
   roles: [
-    { name: 'Team Lead (IT‑03), Canada Border Services Agency', short: 'Team Lead (IT‑03), CBSA', value: 'Nov 2024 – now' },
-    { name: 'Programmer Analyst (IT‑02), Canada Border Services Agency', short: 'Programmer Analyst (IT‑02), CBSA', value: 'Jan 2022 – Nov 2024' },
+    { name: 'Team Lead (IT-03), Canada Border Services Agency', short: 'Team Lead (IT-03), CBSA', value: 'Nov 2024 – now' },
+    { name: 'Programmer Analyst (IT-02), Canada Border Services Agency', short: 'Programmer Analyst (IT-02), CBSA', value: 'Jan 2022 – Nov 2024' },
     {
-      name: 'Junior Application Developer (IT‑01), Accelerated Innovative Emerging Technologies, Canada Border Services Agency',
-      short: 'Junior Developer (IT‑01), CBSA',
+      name: 'Junior Application Developer (IT-01, internship and casual), Accelerated Innovative Emerging Technologies, Canada Border Services Agency',
+      short: 'Junior Developer (IT-01), CBSA',
       value: 'Apr – Dec 2021',
     },
-    { name: 'Application Technical Expert intern, Epic rollout, Hawkesbury General Hospital', short: 'Application Technical Expert intern', value: 'May – Aug 2019' },
+    { name: 'Support ATE (Application Technical Expert) intern, Epic rollout, Hawkesbury General Hospital', short: 'Support ATE intern', value: 'May – Aug 2019' },
   ],
   education: [
     { name: 'Software Development diploma, La Cité collégiale', value: 'Jan 2020 – Apr 2022' },
@@ -143,7 +146,7 @@ const en = {
   strengths: [
     { name: 'Power Platform', value: 'Apps, Automate, BI' },
     { name: 'Web and data', value: 'React, SQL' },
-    { name: 'Hosting', value: 'Cloud and on-premises' },
+    { name: 'Technologies', value: 'Cloud and on-premises' },
     { name: 'Languages', value: 'French and English' },
     { name: 'Security clearance', value: 'Federal, valid' },
   ],
@@ -180,7 +183,7 @@ const fr = {
   meta: {
     title: 'Alexis G. Mayer | Chef d’équipe TI et développeur, Ottawa',
     description:
-      'Alexis G. Mayer, chef d’équipe TI (IT-03) à l’Agence des services frontaliers du Canada à Ottawa : applications Power Platform et web. Bilingue.',
+      'Alexis G. Mayer, chef d’équipe TI (TI-03) à l’Agence des services frontaliers du Canada à Ottawa : applications Power Platform et web. Bilingue.',
   },
   langName: 'Français',
   switchTo: 'View in English',
@@ -192,6 +195,7 @@ const fr = {
     tagline: 'Chef d’équipe à l’Agence des services frontaliers du Canada.',
     intro:
       'Je conçois des applications Power Platform et web sécurisées, et je les explique à des publics techniques et non techniques, en français et en anglais.',
+    glance: 'Power Platform et web · bilingue · autorisation fédérale valide',
     cta: 'Voir les projets',
     resume: 'CV (PDF, en anglais)',
     video: 'Nuages qui défilent, vus d’en haut',
@@ -212,7 +216,7 @@ const fr = {
       kind: 'Intelligence artificielle',
       alt: 'Étages dorés et cuivrés d’un réfrigérateur à dilution, dans un laboratoire',
       objective:
-        'Créer une plateforme web pour comparer le rendement de modèles d’IA lors d’essais supervisés et présenter les résultats aux décideurs.',
+        'Créer une plateforme web pour comparer le rendement de modèles d’IA lors d’essais et présenter les résultats aux décideurs.',
       role: 'J’étais le développeur et je consultais des collègues plus expérimentés. J’ai été réaffecté avant la fin de la plateforme.',
     },
     {
@@ -228,7 +232,7 @@ const fr = {
       kind: 'Gestion de cas',
       alt: 'Une main tenant un téléphone qui affiche une carte avec des repères',
       objective:
-        'Permettre aux utilisateurs, techniques ou non, de créer des demandes et collaborer sur des formulaires en ligne, en remplacement d’un ancien système, avec un suivi des nouvelles données.',
+        'Permettre aux utilisateurs, spécialistes ou non, de créer des demandes et de collaborer sur des formulaires en ligne. Le travail comprenait la migration des données d’un ancien système et la création d’un tableau de bord de suivi.',
       role: 'J’étais chef d’équipe : je gérais les ressources de l’équipe ainsi que les attentes du client.',
     },
     {
@@ -236,33 +240,33 @@ const fr = {
       kind: 'Efficacité interne',
       alt: 'Une entrée en pierre surmontée du mot « Employees » gravé, au-dessus d’une porte noire',
       objective:
-        'Remplacer un ancien outil de demandes d’heures supplémentaires afin que les gestionnaires puissent soumettre des demandes pour leur personnel et les acheminer pour approbation, avec migration des données et ajout de rapports.',
+        'Permettre à la haute direction de soumettre des demandes d’heures supplémentaires pour son personnel et de les acheminer pour approbation. Le travail comprenait la migration des données de la solution précédente et la création d’un tableau de bord de suivi.',
       role: 'Je dirigeais l’équipe, en gérant ses ressources et les attentes du client.',
     },
   ]),
   about: {
     title: 'À propos d’Alexis G. Mayer',
-    newsTitle: 'Chef d’équipe (IT‑03) depuis novembre 2024',
+    newsTitle: 'Chef d’équipe (TI-03) depuis novembre 2024',
     newsDesc: 'À l’Agence des services frontaliers du Canada, où j’ai commencé comme développeur junior en 2021.',
     newsLink: 'Voir le parcours',
   },
-  letterMark: 'technologies infonuagiques et sur site',
+  letterMark: 'Power Platform',
   letter: [
-    'Je suis développeur et chef d’équipe à Ottawa. Mon travail couvre l’analyse des exigences, les relations avec les clients, la formation et la conception de solutions sécurisées.',
+    'Alexis G. Mayer est développeur et chef d’équipe à Ottawa, à l’Agence des services frontaliers du Canada, et conçoit des applications Power Platform et web sécurisées. Mon travail couvre l’analyse des exigences, les relations avec les clients, la formation et la conception de solutions sécurisées.',
     'J’apprends et j’applique rapidement de nouveaux logiciels, et j’ai des connaissances approfondies des technologies infonuagiques et sur site.',
-    'Je communique les projets en termes techniques et non techniques, et je suis parfaitement bilingue, à l’oral comme à l’écrit, en français et en anglais.',
+    'Je présente les projets en termes techniques et non techniques, et je suis parfaitement bilingue, à l’oral comme à l’écrit, en français et en anglais.',
     'Je détiens une autorisation de sécurité fédérale valide, et je reste concentré et axé sur les résultats en menant plusieurs projets de front.',
   ],
   experience: { title: 'Expérience et formation', roles: 'Postes', education: 'Formation', strengths: 'Points forts' },
   roles: [
-    { name: 'Chef d’équipe (IT‑03), Agence des services frontaliers du Canada', short: 'Chef d’équipe (IT‑03), ASFC', value: 'nov. 2024 – auj.' },
-    { name: 'Programmeur analyste (IT‑02), Agence des services frontaliers du Canada', short: 'Programmeur analyste (IT‑02), ASFC', value: 'janv. 2022 – nov. 2024' },
+    { name: 'Chef d’équipe (TI-03), Agence des services frontaliers du Canada', short: 'Chef d’équipe (TI-03), ASFC', value: 'depuis nov. 2024' },
+    { name: 'Programmeur-analyste (TI-02), Agence des services frontaliers du Canada', short: 'Programmeur-analyste (TI-02), ASFC', value: 'janv. 2022 – nov. 2024' },
     {
-      name: 'Développeur d’applications junior (IT‑01), Accelerated Innovative Emerging Technologies, Agence des services frontaliers du Canada',
-      short: 'Développeur junior (IT‑01), ASFC',
+      name: 'Développeur d’applications junior (TI-01, stage et occasionnel), Accelerated Innovative Emerging Technologies, Agence des services frontaliers du Canada',
+      short: 'Développeur junior (TI-01), ASFC',
       value: 'avr. – déc. 2021',
     },
-    { name: 'Stagiaire, expert technique d’application, déploiement d’Epic, Hôpital général de Hawkesbury', short: 'Stagiaire, expert technique', value: 'mai – août 2019' },
+    { name: 'Stagiaire Support ATE (expert technique en applications), déploiement d’Epic, Hôpital général de Hawkesbury', short: 'Stagiaire Support ATE', value: 'mai – août 2019' },
   ],
   education: [
     { name: 'Diplôme en programmation informatique, La Cité collégiale', value: 'janv. 2020 – avr. 2022' },
@@ -271,17 +275,17 @@ const fr = {
   strengths: [
     { name: 'Power Platform', value: 'Apps, Automate, BI' },
     { name: 'Web et données', value: 'React, SQL' },
-    { name: 'Hébergement', value: 'Infonuagique et sur site' },
+    { name: 'Technologies', value: 'Infonuagiques et sur site' },
     { name: 'Langues', value: 'Français et anglais' },
     { name: 'Autorisation de sécurité', value: 'Fédérale, valide' },
   ],
   contact: {
     title: 'Discutons',
-    lead: 'Vous recrutez ou souhaitez échanger sur Power Platform au gouvernement ? Écrivez-moi ou téléchargez mon CV.',
+    lead: 'Vous recrutez ou souhaitez échanger sur Power Platform au gouvernement? Écrivez-moi ou téléchargez mon CV.',
     copy: 'Copier',
     copied: 'Copié',
     copiedAnnounce: 'Courriel copié dans le presse-papiers',
-    legend: 'À quel sujet ?',
+    legend: 'À quel sujet?',
     phone: 'Téléphone',
     languages: 'Langues',
     languagesValue: 'Français et anglais',
@@ -292,7 +296,7 @@ const fr = {
     { id: 'role', label: 'Un poste', cta: 'Écrire au sujet d’un poste', subject: 'Un poste', body: 'J’aimerais vous parler d’un poste.' },
     { id: 'project', label: 'Un projet', cta: 'Écrire au sujet d’un projet', subject: 'Un projet', body: 'J’ai un projet pour lequel j’aimerais votre aide.' },
     { id: 'details', label: 'Mon expérience', cta: 'Poser une question sur mon expérience', subject: 'Votre expérience', body: 'J’aimerais en savoir plus sur votre expérience.' },
-    { id: 'other', label: 'Autre chose', cta: 'Écrire à un autre sujet', subject: 'Bonjour', body: '' },
+    { id: 'other', label: 'Autre chose', cta: 'Écrire au sujet d’autre chose', subject: 'Bonjour', body: '' },
   ],
   footer: {
     credits: 'Crédits',

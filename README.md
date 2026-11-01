@@ -17,7 +17,7 @@ A bilingual (English / French) single-page portfolio that presents my background
 
 - **Bilingual content**: English at `/` and French at `/fr/`, both prerendered, with `hreflang` links between them. Visitors arriving at `/` go to `/fr/` if they last chose French or their browser is in French. All copy lives in `src/content.js`.
 - **Scroll reveals and parallax**: sections fade in with `IntersectionObserver`, and motion is turned off for visitors who prefer reduced motion.
-- **Video backdrop**: a looping cloud video with a poster image fallback.
+- **Video backdrop**: a looping cloud video (WebM and MP4) that starts after the poster has painted.
 - **Resume download**: served from `public/ResumeAlexisMayer.pdf`.
 
 ## Project Structure
