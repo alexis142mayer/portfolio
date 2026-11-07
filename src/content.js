@@ -56,7 +56,7 @@ const en = {
   },
   langName: 'English',
   switchTo: 'Voir en français',
-  nav: { work: 'Work', about: 'About', experience: 'Experience', contact: 'Contact', label: 'Sections' },
+  nav: { work: 'Work', about: 'About', experience: 'Experience', contact: 'Contact', label: 'Sections', menu: 'Menu', close: 'Close' },
   backToTop: 'back to top',
   emailMe: 'Email me',
   hero: {
@@ -72,7 +72,7 @@ const en = {
     play: 'Play the clouds video',
   },
   work: {
-    title: 'Selected projects: AI, case management and internal tools',
+    title: ['Selected projects', ': AI, case management and internal tools'],
     note: 'For security reasons, I only refer to these projects anonymously and by their technical requirements. Images are illustrative and don’t show the projects.',
     objective: 'Objective',
     role: 'Role',
@@ -187,7 +187,7 @@ const fr = {
   },
   langName: 'Français',
   switchTo: 'View in English',
-  nav: { work: 'Projets', about: 'À propos', experience: 'Expérience', contact: 'Contact', label: 'Sections' },
+  nav: { work: 'Projets', about: 'À propos', experience: 'Expérience', contact: 'Contact', label: 'Sections', menu: 'Menu', close: 'Fermer' },
   backToTop: 'retour en haut',
   emailMe: 'M’écrire',
   hero: {
@@ -203,7 +203,7 @@ const fr = {
     play: 'Lire la vidéo des nuages',
   },
   work: {
-    title: 'Projets sélectionnés : IA, gestion de cas et outils internes',
+    title: ['Projets sélectionnés', ' : IA, gestion de cas et outils internes'],
     note: 'Pour des raisons de sécurité, je ne fais référence à ces projets que de manière anonyme et par leurs aspects techniques. Les images sont illustratives et ne montrent pas les projets.',
     objective: 'Objectif',
     role: 'Rôle',

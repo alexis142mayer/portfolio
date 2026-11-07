@@ -1726,3 +1726,679 @@ html[lang='fr'] .hero-title {
     margin-bottom: 0;
   }
 }
+
+/* ---------- Menu sheet: phones only ---------- */
+
+.menu-toggle,
+.menu-sheet {
+  display: none;
+}
+
+/* ==========================================================================
+ * Phones (≤ 800px, tightened at ≤ 600px): the page leaves its floating
+ * panels and becomes a run of full-bleed fields. The desktop gradient is
+ * played out as a sequence of flat colour fields, one per project, from
+ * blue through coral to crimson.
+ * ========================================================================== */
+
+@media (max-width: 720px) {
+  .bar-end .lang-toggle {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-grid;
+    align-content: center;
+    min-height: 44px;
+    padding: 0 4px;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    font: 500 var(--step-small) / 1 var(--text);
+    cursor: pointer;
+  }
+
+  .menu-label {
+    grid-area: 1 / 1;
+    transition:
+      opacity 200ms var(--ease-out),
+      transform 200ms var(--ease-out);
+  }
+
+  .menu-label[data-hidden] {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  .menu-sheet:not([hidden]) {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 8px var(--pad) 28px;
+    background: var(--charcoal);
+    color: var(--on-dark);
+    animation: sheet-down 320ms var(--ease-out) both;
+  }
+
+  .menu-sheet :focus-visible {
+    outline-color: var(--paper);
+  }
+
+  .menu-links a {
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+    font-family: var(--display);
+    font-size: calc(12.4vw * 0.68);
+    font-stretch: 75%;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition:
+      transform 160ms var(--ease-out),
+      color 200ms ease;
+  }
+
+  .menu-links a:active {
+    transform: translateX(6px);
+  }
+
+  .menu-links a[aria-current] {
+    color: var(--sage);
+  }
+
+  .menu-links li {
+    animation: fade-up 400ms var(--ease-out) both;
+    animation-delay: calc(60ms + var(--i) * 50ms);
+  }
+
+  .menu-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 20px;
+    font-size: var(--step-small);
+  }
+
+  .menu-foot .lang-toggle {
+    border: 0;
+    background: rgb(242 242 239 / 0.08);
+  }
+
+  .menu-foot .lang-option {
+    color: var(--on-dark-muted);
+  }
+
+  .menu-foot .lang-option[data-current] {
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  .menu-foot > a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@keyframes sheet-down {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 800px) {
+  /* Work: one flat field per project. */
+  .work-field {
+    padding: 0;
+    background: var(--field-blue);
+  }
+
+  .work-head {
+    padding: 56px var(--pad) 8px;
+  }
+
+  .work-heading-rest {
+    display: none;
+  }
+
+  .work-head .section-title {
+    font-size: clamp(2.75rem, 12.4vw, 4.5rem);
+    font-stretch: 75%;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .work-index {
+    margin: 0;
+  }
+
+  .work-row {
+    position: relative;
+    padding: 32px var(--pad) 56px;
+  }
+
+  .work-row + .work-row {
+    margin-top: 0;
+  }
+
+  .work-row:nth-child(2) {
+    background: var(--sage-ink);
+  }
+
+  .work-row:nth-child(3) {
+    background: var(--crimson);
+  }
+
+  .work-row:nth-child(4) {
+    background: var(--charcoal);
+  }
+
+  .work-thumb {
+    aspect-ratio: 4 / 3;
+    border-radius: 0;
+  }
+
+  /* The desktop badge, carried onto each photograph's lower corner. */
+  .work-letter {
+    position: absolute;
+    top: calc(32px + (100vw - 2 * var(--pad)) * 0.75 - 72px);
+    right: var(--pad);
+    display: grid;
+    place-items: end start;
+    width: 72px;
+    height: 72px;
+    padding: 10px 12px;
+    background: var(--signal);
+    color: var(--paper);
+    font-family: var(--display);
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .work-name {
+    padding: 20px 0 0;
+  }
+
+  .work-title {
+    font-size: clamp(2.75rem, 12.4vw, 4.5rem);
+    font-stretch: 75%;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  .work-topic {
+    margin-top: 8px;
+    font-family: var(--text);
+    font-size: var(--step-lead);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .work-desc-inline {
+    margin-top: 24px;
+  }
+
+  .work-desc-inline .details {
+    gap: 20px;
+    font-size: var(--step-body);
+  }
+
+  .work-desc-inline .details dt {
+    font-family: var(--text);
+    font-stretch: normal;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  /* Technologies read as a sentence, not a row of outlined pills. */
+  .work-desc-inline .tech {
+    display: block;
+    margin: 0;
+  }
+
+  .work-desc-inline .tech li {
+    display: inline;
+    padding: 0;
+    border: 0;
+    white-space: normal;
+  }
+
+  .work-desc-inline .tech li:not(:last-child)::after {
+    content: ', ';
+  }
+}
+
+@media (max-width: 600px) {
+  /* Frame: full-bleed fields, no canvas, no drifting glows. */
+  html {
+    background: var(--paper);
+    scroll-padding-top: calc(var(--bar) + var(--safe-top));
+  }
+
+  body {
+    background: var(--canvas);
+  }
+
+  .backdrop {
+    display: none;
+  }
+
+  .panel {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .bar,
+  .bar[data-scrolled] {
+    top: 0;
+    margin: 0;
+    padding-top: var(--safe-top);
+    height: calc(var(--bar) + var(--safe-top));
+    border-radius: 0;
+    background: var(--paper);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .bar[data-hidden] {
+    transform: translateY(-100%);
+  }
+
+  /* Hero: the name at display size, the role a step down. */
+  .hero {
+    min-height: calc(100svh - var(--bar) - var(--safe-top));
+    padding: 20px var(--pad) var(--pad);
+  }
+
+  .hero-head {
+    row-gap: 20px;
+  }
+
+  /* Sized so the name holds one line at 320px and up. */
+  .hero-title,
+  html[lang='fr'] .hero-title {
+    font-size: 12.4vw;
+    font-stretch: 75%;
+    font-weight: 600;
+    line-height: 0.92;
+    letter-spacing: -0.005em;
+  }
+
+  .hero-title .load-mask:last-of-type {
+    margin-top: 6px;
+    font-size: 0.68em;
+    font-weight: 500;
+  }
+
+  html[lang='fr'] .hero-title .load-mask:last-of-type {
+    font-size: 0.52em;
+  }
+
+  .hero-aside {
+    gap: 20px;
+    color: var(--ink);
+  }
+
+  .hero-glance {
+    color: var(--muted);
+  }
+
+  .hero-jump {
+    display: none;
+  }
+
+  .hero-media {
+    min-height: 34svh;
+    margin-top: 28px;
+  }
+
+  /* Work: the note returns, small, under the title. */
+  .work-note {
+    display: block;
+    margin-top: 4px;
+    font-size: var(--step-small);
+  }
+
+  /* About: the photograph is shown, not buried, and the wordmark sits on it. */
+  .about {
+    min-height: 0;
+  }
+
+  .about::after {
+    display: none;
+  }
+
+  .about-photos,
+  .about-photos[data-parallax] {
+    position: relative;
+    inset: auto;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    animation: none;
+    transform: none !important;
+  }
+
+  /* Neutral scrim so the wordmark reads where it crosses the photograph. */
+  .about-photos::after {
+    content: '';
+    position: absolute;
+    inset: 40% 0 0;
+    background: linear-gradient(180deg, transparent, var(--charcoal));
+  }
+
+  .about-inner {
+    margin-top: -21vw;
+    padding: 0 var(--pad) 64px;
+  }
+
+  .wordmark {
+    font-size: 18vw;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-right: -0.1em;
+  }
+
+  .about-sub {
+    margin-top: 16px;
+    font-size: var(--step-body);
+    font-stretch: 100%;
+    font-weight: 500;
+  }
+
+  .about-row {
+    gap: 32px;
+    padding-top: 40px;
+  }
+
+  .news-card {
+    display: block;
+    height: auto;
+    background: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .news-card img {
+    display: none;
+  }
+
+  .news-card figcaption {
+    gap: 8px;
+    padding: 0;
+  }
+
+  .news-title {
+    font-size: calc(12.4vw * 0.68);
+    font-stretch: 75%;
+    font-weight: 600;
+    line-height: 1.05;
+    color: var(--sage);
+  }
+
+  .news-desc {
+    font-size: var(--step-body);
+    color: var(--on-dark);
+  }
+
+  .letter,
+  .letter p:nth-child(n + 3) {
+    display: block;
+    color: var(--on-dark);
+  }
+
+  /* Experience: rows held apart by space, not lines. */
+  .experience {
+    padding: 64px var(--pad) 72px;
+  }
+
+  .experience-head {
+    margin-bottom: 32px;
+  }
+
+  .experience-head h2 {
+    font-size: 12.4vw;
+    font-stretch: 75%;
+    font-weight: 600;
+  }
+
+  .lists,
+  .lists-stack {
+    gap: 40px;
+  }
+
+  .list-label {
+    margin-bottom: 8px;
+    font-family: var(--display);
+    font-size: var(--step-lead);
+    font-stretch: 75%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--crimson);
+  }
+
+  .list-row {
+    display: grid;
+    gap: 2px;
+    min-height: 0;
+    padding-block: 10px;
+    border-top: 0;
+  }
+
+  .list-value {
+    white-space: normal;
+  }
+
+  /* Contact: the sea as a band, then a solid card. */
+  .contact {
+    min-height: 0;
+  }
+
+  .contact-media {
+    position: relative;
+    aspect-ratio: 3 / 2;
+  }
+
+  .contact-media::after {
+    display: none;
+  }
+
+  .contact-inner {
+    display: block;
+    padding: 32px var(--pad) 48px;
+  }
+
+  .contact-title {
+    font-size: 12.4vw;
+    font-stretch: 75%;
+    font-weight: 600;
+  }
+
+  .contact-card {
+    margin-top: 24px;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .contact-lead {
+    display: block;
+    color: var(--on-dark);
+  }
+
+  .contact-email {
+    flex-wrap: wrap;
+    gap: 0 16px;
+    font-size: var(--step-lead);
+  }
+
+  .need span {
+    border: 0;
+    background: rgb(242 242 239 / 0.08);
+  }
+
+  .facts {
+    margin-top: 16px;
+  }
+
+  .facts div {
+    padding: 0;
+    border-top: 0;
+    font-size: var(--step-body);
+  }
+
+  .footer {
+    padding: 8px var(--pad) calc(16px + env(safe-area-inset-bottom, 0px));
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 720px) and (prefers-reduced-motion: reduce) {
+  .menu-sheet:not([hidden]),
+  .menu-links li {
+    animation: fade 200ms ease both;
+  }
+}
+
+/* ==========================================================================
+ * Phones: transitions between sections, tied to the scroll (no script).
+ * The hero holds while Work slides over it; every later section arrives as a
+ * rounded panel on the canvas (the desktop's look) and opens to full-bleed,
+ * and the section it replaces narrows and rounds off as it leaves. Between
+ * projects, each photograph opens from an inset window and its letter slides
+ * in from the edge. Reduced motion and older engines get the still layout.
+ * ========================================================================== */
+
+@media (max-width: 600px) and (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    /* Hero → Work: a sheet over a held page. */
+    .hero {
+      position: sticky;
+      top: 0;
+      z-index: 0;
+      /* Once Work covers it, the held hero goes, so it never shows behind later panels. */
+      animation: hero-away linear both;
+      animation-timeline: scroll(root);
+      animation-range: 100svh 104svh;
+    }
+
+    .hero ~ .panel {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* The heading lifts away before the sheet reaches it; nothing slides over live type. */
+    .hero-head {
+      animation: head-lift linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 45svh;
+    }
+
+    /* Every section after the hero: in as a panel opening, out as one closing. */
+    .work,
+    .about,
+    .experience,
+    .contact {
+      animation:
+        panel-open linear both,
+        panel-close linear forwards;
+      animation-timeline: view(), view();
+      animation-range:
+        entry 0% entry 70%,
+        exit 15% exit 100%;
+    }
+
+    /* Frames clip rather than scroll, so the pictures inside can watch the page. */
+    .work-thumb,
+    .contact-media {
+      overflow: clip;
+    }
+
+    .work-thumb {
+      animation: window-open linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 40%;
+    }
+
+    .work-thumb img {
+      animation: picture-settle linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 45%;
+    }
+
+    .work-letter {
+      animation: letter-in linear both;
+      animation-timeline: view();
+      animation-range: entry 30% cover 35%;
+    }
+  }
+}
+
+@keyframes head-lift {
+  to {
+    opacity: 0;
+    transform: translateY(-6vh);
+  }
+}
+
+@keyframes hero-away {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes panel-open {
+  from {
+    clip-path: inset(0 5% 0 5% round 28px 28px 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0 round 0);
+  }
+}
+
+@keyframes panel-close {
+  from {
+    clip-path: inset(0 0 0 0 round 0);
+  }
+  to {
+    clip-path: inset(0 5% 0 5% round 0 0 28px 28px);
+  }
+}
+
+@keyframes window-open {
+  from {
+    clip-path: inset(10% 12% 10% 12%);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes picture-settle {
+  from {
+    transform: scale(1.14);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes letter-in {
+  from {
+    transform: translateX(calc(100% + var(--pad)));
+  }
+  to {
+    transform: none;
+  }
+}

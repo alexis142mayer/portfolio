@@ -244,9 +244,23 @@ function Photo({ name, sizes, alt = '', width, height, ...rest }) {
 function Header({ active }) {
   const { t } = useLang();
   const { hidden, scrolled } = useScrollState();
+  const [open, setOpen] = useState(false);
+
+  // Phones: the menu sheet closes on Escape or when a link is chosen.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => e.key === 'Escape' && setOpen(false);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [open]);
 
   return (
-    <header className="bar" data-hidden={hidden || undefined} data-scrolled={scrolled || undefined}>
+    <header
+      className="bar"
+      data-hidden={(hidden && !open) || undefined}
+      data-scrolled={scrolled || undefined}
+      data-open={open || undefined}
+    >
       <nav aria-label={t.nav.label} className="bar-nav">
         {SECTION_IDS.map((id) => (
           <a key={id} href={`#${id}`} className="bar-link" aria-current={active === id ? 'true' : undefined}>
@@ -259,9 +273,42 @@ function Header({ active }) {
       </a>
       <div className="bar-end">
         <LangToggle />
+        <button
+          type="button"
+          className="menu-toggle"
+          aria-expanded={open}
+          aria-controls="menu-sheet"
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span className="menu-label" data-hidden={open || undefined}>
+            {t.nav.menu}
+          </span>
+          <span className="menu-label" data-hidden={!open || undefined}>
+            {t.nav.close}
+          </span>
+        </button>
         <a href={`mailto:${profile.email}`} className="bar-action">
           {t.emailMe} <Arrow />
         </a>
+      </div>
+      <div className="menu-sheet" id="menu-sheet" hidden={!open}>
+        <nav aria-label={t.nav.label}>
+          <ul className="menu-links">
+            {SECTION_IDS.map((id, i) => (
+              <li key={id} style={{ '--i': i }}>
+                <a href={`#${id}`} aria-current={active === id ? 'true' : undefined} onClick={() => setOpen(false)}>
+                  {t.nav[id]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="menu-foot">
+          <LangToggle />
+          <a href={profile.resume} target="_blank" rel="noreferrer">
+            {t.hero.resume}
+          </a>
+        </div>
       </div>
     </header>
   );
@@ -399,7 +446,8 @@ function Work() {
       <div className="work-field">
         <Reveal className="work-head">
           <h2 id="work-title" className="section-title rise">
-            {t.work.title}
+            {t.work.title[0]}
+            <span className="work-heading-rest">{t.work.title[1]}</span>
           </h2>
           <p className="work-note rise" style={{ '--i': 1 }}>
             {t.work.note}
@@ -411,6 +459,9 @@ function Work() {
               <figure className="work-thumb rise" style={{ '--i': 0 }}>
                 <Photo name={p.image} sizes="100vw" alt={p.alt} width={p.width} height={p.height} />
               </figure>
+              <span className="work-letter rise" aria-hidden="true" style={{ '--i': 1 }}>
+                {p.letter}
+              </span>
               <h3 className="rise" style={{ '--i': 1 }}>
                 {narrow ? (
                   <span className="work-name">
@@ -434,24 +485,7 @@ function Work() {
                 )}
               </h3>
               <div className="work-desc-inline rise" style={{ '--i': 2 }}>
-                <ul className="tech">
-                  {p.technologies.map((tech) => (
-                    <li key={tech}>{tech}</li>
-                  ))}
-                </ul>
-                <details className="work-more" open={i === 0}>
-                  <summary>{t.work.more}</summary>
-                  <dl className="details">
-                    <div>
-                      <dt>{t.work.objective}</dt>
-                      <dd>{p.objective}</dd>
-                    </div>
-                    <div>
-                      <dt>{t.work.role}</dt>
-                      <dd>{p.role}</dd>
-                    </div>
-                  </dl>
-                </details>
+                <ProjectDetails project={p} />
               </div>
             </Reveal>
           ))}
