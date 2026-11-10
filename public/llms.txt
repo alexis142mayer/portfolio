@@ -1,0 +1,39 @@
+# Alexis G. Mayer
+
+> IT team lead (IT-03) and developer at the Canada Border Services Agency in Ottawa. Builds secure Microsoft Power Platform and web applications. Fully bilingual in French and English, with a valid federal security clearance.
+
+## Pages
+
+- [Portfolio (English)](https://alexisgmayer.dev/): projects, experience, education and contact
+- [Portfolio (français)](https://alexisgmayer.dev/fr/): the same page in French
+- [Resume (PDF, English)](https://alexisgmayer.dev/ResumeAlexisMayer.pdf)
+
+## Selected projects
+
+Shown anonymously for security.
+
+- Project A, facial recognition (developer): a web platform that compares facial recognition models in trials and reports the results to decision-makers. React, SQL, AWS Workspace, JFrog.
+- Project B, field data collection (developer, team of seven): case data entry from a computer or phone, moved off a legacy system, with a reporting dashboard. Power Apps, Dataverse, Power Automate, Power BI.
+- Project C, case management (team lead): online forms where technical and non-technical users create requests and work on them together. Power Apps, Dataverse, GC Notify, Power BI.
+- Project D, internal efficiency (team lead): overtime requests that managers submit for their staff and route for approval. Power Apps, Dataverse, GC Notify, Power BI.
+
+## Experience
+
+- Team Lead (IT-03), Canada Border Services Agency: Nov 2024 to now
+- Programmer Analyst (IT-02), Canada Border Services Agency: Jan 2022 to Nov 2024
+- Junior Application Developer (IT-01), Canada Border Services Agency: Apr to Dec 2021
+- Support ATE intern, Hawkesbury General Hospital: May to Aug 2019
+
+## Education
+
+- Software Development diploma, La Cité collégiale: 2020 to 2022
+- Computer Engineering, La Cité collégiale: 2018 to 2019
+
+## Skills
+
+Power Apps, Power Automate, Power BI, Dataverse, React, SQL, requirements gathering, client work, user training, cloud and on-premises technology.
+
+## Contact
+
+- Email: alexis.g.mayer@gmail.com
+- LinkedIn: https://www.linkedin.com/in/alexis-mayer-342842437

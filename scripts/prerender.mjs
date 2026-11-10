@@ -1,0 +1,123 @@
+// Writes the English and French pages into dist/ with their content and metadata,
+// replacing the <!--head--> block in index.html.
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { render, content, profile } from '../dist-ssr/entry-server.js';
+
+const ORIGIN = 'https://alexisgmayer.dev';
+const urls = { en: `${ORIGIN}/`, fr: `${ORIGIN}/fr/` };
+const OG_IMAGE = `${ORIGIN}/assets/og.jpg`;
+
+const esc = (s) => s.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
+
+function jsonLd(lang) {
+  const t = content[lang];
+  const person = `${ORIGIN}/#person`;
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'WebSite', '@id': `${ORIGIN}/#website`, url: urls.en, name: profile.name, inLanguage: ['en', 'fr'] },
+      {
+        '@type': 'ProfilePage',
+        '@id': `${urls[lang]}#profilepage`,
+        url: urls[lang],
+        name: t.meta.title,
+        description: t.meta.description,
+        inLanguage: lang,
+        dateModified: profile.updated,
+        isPartOf: { '@id': `${ORIGIN}/#website` },
+        mainEntity: { '@id': person },
+      },
+      {
+        '@type': 'Person',
+        '@id': person,
+        name: profile.name,
+        alternateName: 'Alexis Mayer',
+        url: urls.en,
+        jobTitle: 'Team Lead (IT-03)',
+        worksFor: {
+          '@type': 'GovernmentOrganization',
+          name: 'Canada Border Services Agency',
+          alternateName: ['CBSA', 'Agence des services frontaliers du Canada', 'ASFC'],
+          url: 'https://www.cbsa-asfc.gc.ca/',
+        },
+        alumniOf: { '@type': 'CollegeOrUniversity', name: 'La Cité collégiale' },
+        hasCredential: {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Software Development diploma',
+          credentialCategory: 'diploma',
+          dateCreated: '2022-04',
+          recognizedBy: { '@type': 'CollegeOrUniversity', name: 'La Cité collégiale' },
+        },
+        address: { '@type': 'PostalAddress', addressLocality: 'Ottawa', addressRegion: 'ON', addressCountry: 'CA' },
+        knowsLanguage: ['en', 'fr'],
+        knowsAbout: ['Microsoft Power Platform', 'Power Apps', 'Power Automate', 'Power BI', 'Dataverse', 'React', 'SQL'],
+        hasOccupation: {
+          '@type': 'Occupation',
+          name: 'IT Team Lead and Developer',
+          occupationLocation: { '@type': 'City', name: 'Ottawa' },
+          skills: 'Microsoft Power Platform, Power Apps, Power Automate, Power BI, Dataverse, React, SQL, requirements gathering, user training',
+        },
+        ...(profile.sameAs.length ? { sameAs: profile.sameAs } : {}),
+      },
+    ],
+  };
+}
+
+function head(lang) {
+  const { title, description } = content[lang].meta;
+  const tags = [
+    `<title>${esc(title)}</title>`,
+    `<meta name="description" content="${esc(description)}" />`,
+    `<link rel="canonical" href="${urls[lang]}" />`,
+    `<link rel="alternate" hreflang="en" href="${urls.en}" />`,
+    `<link rel="alternate" hreflang="fr" href="${urls.fr}" />`,
+    `<link rel="alternate" hreflang="x-default" href="${urls.en}" />`,
+    `<meta property="og:type" content="profile" />`,
+    `<meta property="og:site_name" content="${esc(profile.name)}" />`,
+    `<meta property="og:title" content="${esc(title)}" />`,
+    `<meta property="og:description" content="${esc(description)}" />`,
+    `<meta property="og:url" content="${urls[lang]}" />`,
+    `<meta property="og:image" content="${OG_IMAGE}" />`,
+    `<meta property="og:image:width" content="1200" />`,
+    `<meta property="og:image:height" content="630" />`,
+    `<meta property="og:image:alt" content="${esc(title)}" />`,
+    `<meta property="og:locale" content="${lang === 'fr' ? 'fr_CA' : 'en_CA'}" />`,
+    `<meta property="og:locale:alternate" content="${lang === 'fr' ? 'en_CA' : 'fr_CA'}" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<script type="application/ld+json">${JSON.stringify(jsonLd(lang)).replaceAll('<', '\\u003c')}</script>`,
+  ];
+  return tags.join('\n    ');
+}
+
+const template = readFileSync('dist/index.html', 'utf8');
+
+const page = (lang) =>
+  template
+    .replace('<html lang="en">', `<html lang="${lang}">`)
+    .replace(/<!--head-->[\s\S]*<!--\/head-->/, () => head(lang))
+    .replace('<div id="root"></div>', () => `<div id="root">${render(lang)}</div>`);
+
+// Built from profile.updated, so the sitemap and the JSON-LD dateModified always agree.
+function sitemap() {
+  const alternates = ['en', 'fr', 'x-default']
+    .map((code) => `    <xhtml:link rel="alternate" hreflang="${code}" href="${urls[code === 'x-default' ? 'en' : code]}"/>`)
+    .join('\n');
+  const entry = (lang) => `  <url>
+    <loc>${urls[lang]}</loc>
+    <lastmod>${profile.updated}</lastmod>
+${alternates}
+  </url>`;
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${entry('en')}
+${entry('fr')}
+</urlset>
+`;
+}
+
+writeFileSync('dist/index.html', page('en'));
+mkdirSync('dist/fr', { recursive: true });
+writeFileSync('dist/fr/index.html', page('fr'));
+writeFileSync('dist/sitemap.xml', sitemap());
+rmSync('dist-ssr', { recursive: true });
