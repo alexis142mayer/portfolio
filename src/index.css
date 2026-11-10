@@ -504,6 +504,26 @@ a {
   margin: 20px auto 0;
 }
 
+/* Wide enough for the whole list on one line on desktop (EN 729px, FR 777px). */
+.hero .lead-list {
+  max-width: 800px;
+}
+
+/* Items wrap whole; each keeps its trailing dot, so lines break after a dot. */
+.lead-item {
+  white-space: nowrap;
+}
+
+.lead-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 0.15em 0 0.45em; /* plus the following space: even gaps both sides */
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: middle;
+}
+
 .hero .actions {
   margin-top: 32px;
 }
@@ -516,6 +536,26 @@ a {
   overflow: hidden;
   border-radius: var(--radius);
   background: #8fa3bd;
+  isolation: isolate;
+}
+
+/* Placeholder while the poster loads (HIG Loading: show something as soon as possible).
+ * Sits under the video, so the poster covers it the moment it paints. The 600ms delay
+ * keeps it hidden on fast or cached loads; it stops after a few passes. */
+.hero-media::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(100deg, transparent 30%, rgb(255 255 255 / 0.3) 50%, transparent 70%);
+  transform: translateX(-100%);
+  animation: shimmer 1600ms var(--ease) 600ms 6;
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .hero-video {
@@ -1196,6 +1236,11 @@ a {
   .menu-sheet:not([hidden]),
   .menu-sheet li {
     animation: fade 300ms ease both;
+  }
+
+  /* The flat placeholder colour alone says the image is coming. */
+  .hero-media::before {
+    display: none;
   }
 
   .reveal-armed .rise {

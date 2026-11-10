@@ -35,7 +35,8 @@ const en = {
   backToTop: 'back to top',
   hero: {
     title: 'Developer and team lead.',
-    sub: 'Secure Power Platform and web apps at the Canada Border Services Agency.',
+    // A list renders with round dots between the items.
+    sub: ['Websites', 'Mobile apps', 'Reporting dashboards', 'Power Platform'],
     cta: 'See the work',
     resume: 'Resume',
     video: 'Clouds drifting seen from above',
@@ -125,7 +126,7 @@ const fr = {
   backToTop: 'retour en haut',
   hero: {
     title: 'Développeur et chef d’équipe.',
-    sub: 'Applications Power Platform et web sécurisées à l’Agence des services frontaliers du Canada.',
+    sub: ['Sites web', 'Applications mobiles', 'Tableaux de bord', 'Power Platform'],
     cta: 'Voir les projets',
     resume: 'CV (en anglais)',
     video: 'Nuages qui défilent, vus d’en haut',

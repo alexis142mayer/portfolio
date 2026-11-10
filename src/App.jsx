@@ -357,8 +357,21 @@ function Hero() {
             {t.hero.title}
           </span>
         </h1>
-        <p className="lead load" style={{ '--i': 2 }}>
-          {t.hero.sub}
+        <p className={`lead load${Array.isArray(t.hero.sub) ? ' lead-list' : ''}`} style={{ '--i': 2 }}>
+          {Array.isArray(t.hero.sub)
+            ? t.hero.sub.map((item, i, all) => (
+                <span key={item}>
+                  <span className="lead-item">
+                    {item}
+                    {i < all.length - 1 && (
+                      <span className="lead-dot">
+                        <span className="sr-only">, </span>
+                      </span>
+                    )}
+                  </span>{' '}
+                </span>
+              ))
+            : t.hero.sub}
         </p>
         <div className="actions load" style={{ '--i': 3 }}>
           <a href="#work" className="button">
